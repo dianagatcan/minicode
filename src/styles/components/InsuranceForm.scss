@@ -1,0 +1,11 @@
+.main {
+  width: 68vw;
+  padding: 105px 0;
+  // background-color: aqua;
+}
+
+.container {
+  display: flex;
+  column-gap: 11vw;
+  width: calc(100vw - 11vw - 100px);
+}

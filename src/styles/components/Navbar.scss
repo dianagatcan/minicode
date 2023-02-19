@@ -1,6 +1,7 @@
 @import "../utility";
 
 .nav {
+  height: 100px;
   display: flex;
   padding-left: 34px;
   align-items: center;
@@ -32,9 +33,11 @@
     }
   }
   hr {
+    height: 1px;
     width: 410px;
-    border-top: 1px solid $sauvignon;
     margin: auto 30px;
+    background-color: $sauvignon;
+    border: none;
   }
   h1 {
     text-align: center;

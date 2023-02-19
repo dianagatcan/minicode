@@ -3,7 +3,11 @@
     { "name": "users", "path": "assets/icons/users.png" },
     { "name": "file-reg", "path": "assets/icons/file-reg.png" },
     { "name": "Logo", "path": "assets/icons/Logo.png" },
-    { "name": "menu1", "path": "assets/icons/menu1.png" }
+    { "name": "menu1", "path": "assets/icons/menu1.png" },
+    { "name": "phone", "path": "assets/icons/phone.png" },
+    { "name": "lang", "path": "assets/icons/lang.png" },
+    { "name": "messenger", "path": "assets/icons/messenger.png" },
+    { "name": "whatsapp", "path": "assets/icons/whatsapp.png" }
   ],
   "vehicles": [
     {

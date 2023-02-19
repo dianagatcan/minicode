@@ -1,5 +1,5 @@
 import "../styles/components/Navbar.scss";
-import Media from "./Media";
+import Media from "./utils/Media";
 
 const Navbar = () => {
   return (
