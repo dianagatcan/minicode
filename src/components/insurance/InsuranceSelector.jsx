@@ -1,4 +1,5 @@
 import InsuranceButton from "./InsuranceButton";
+import Media from "../utils/Media";
 import "../../styles/components/InsuranceSelector.scss";
 
 const InsuranceSelector = () => {
@@ -19,6 +20,10 @@ const InsuranceSelector = () => {
         {insuranceTypes.map((insurance) => (
           <InsuranceButton text={insurance} />
         ))}
+        <button className="button">
+          Altele
+          <Media name="arrow-right" />
+        </button>
       </div>
     </div>
   );

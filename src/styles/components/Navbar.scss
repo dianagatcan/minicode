@@ -3,19 +3,17 @@
 .nav {
   height: 100px;
   display: flex;
+  column-gap: 30px;
   padding-left: 34px;
   align-items: center;
   background-color: $white;
   box-shadow: 0 4px 6px -6px gray;
-  &__menu {
-    padding-right: 3.5vw;
-  }
   &__logo {
     width: 200px;
   }
   &__reg {
     display: flex;
-    width: 215px;
+    // width: 215px;
     column-gap: 15px;
     p {
       font-family: "PT Root light";
@@ -33,15 +31,22 @@
     }
   }
   hr {
-    height: 1px;
-    width: 410px;
+    border-top: 1px solid $sauvignon;
     margin: auto 30px;
-    background-color: $sauvignon;
-    border: none;
   }
   h1 {
     text-align: center;
-    width: 431px;
     font-family: "Raleway", sans-serif;
   }
+}
+
+.menu_logo {
+  display: flex;
+  column-gap: 3.5vw;
+  align-items: center;  
+}
+
+.middle {
+  display: flex;
+  flex-grow: 1;
 }
