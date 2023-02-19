@@ -1,0 +1,55 @@
+{
+  "icons": [
+    { "name": "users", "path": "assets/icons/users.png" },
+    { "name": "file-reg", "path": "assets/icons/file-reg.png" },
+    { "name": "Logo", "path": "assets/icons/Logo.png" },
+    { "name": "menu1", "path": "assets/icons/menu1.png" }
+  ],
+  "vehicles": [
+    {
+      "name": "car",
+      "path": "assets/icons/car.png",
+      "description": "Autoturism cu până la 9 locuri"
+    },
+    {
+      "name": "truck1",
+      "path": "assets/icons/truck1.png",
+      "description": "Camion până la 3,5 tone"
+    },
+    {
+      "name": "truck",
+      "path": "assets/icons/truck.png",
+      "description": "Camion mai mult de 3,5 tone"
+    },
+    {
+      "name": "minibus",
+      "path": "assets/icons/minibus.png",
+      "description": "Microbus până la 20 locuri"
+    },
+    {
+      "name": "bus",
+      "path": "assets/icons/bus.png",
+      "description": "Autobuz peste 20 locuri"
+    },
+    {
+      "name": "trailer",
+      "path": "assets/icons/trailer.png",
+      "description": "Remorci, semiremorci"
+    },
+    {
+      "name": "refrigerant",
+      "path": "assets/icons/refrigerant.png",
+      "description": "Refrigeratoare, cisterne"
+    },
+    {
+      "name": "technique",
+      "path": "assets/icons/technique.png",
+      "description": "Tehnică specială"
+    },
+    {
+      "name": "other-technique",
+      "path": "assets/icons/other-technique.png",
+      "description": "Echipament suplimentar"
+    }
+  ]
+}

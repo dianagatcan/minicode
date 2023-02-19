@@ -1,0 +1,24 @@
+@import "./utility";
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1920px;
+  // background-color: $gray;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+hr {
+  width: 100%;
+}
