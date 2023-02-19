@@ -37,13 +37,14 @@
   h1 {
     text-align: center;
     font-family: "Raleway", sans-serif;
+    min-width: 330px;
   }
 }
 
 .menu_logo {
   display: flex;
   column-gap: 3.5vw;
-  align-items: center;  
+  align-items: center;
 }
 
 .middle {
