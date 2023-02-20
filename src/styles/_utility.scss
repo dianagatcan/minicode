@@ -25,9 +25,31 @@ $burgundy: #a40731;
 $sauvignon: #e7e5e4;
 $grey: #f9f9f9;
 $grey-shadow: #1b1918;
+$dark-gray: #42403f;
+$alice-blue: #f4f9ff;
 $gradient: linear-gradient(
   85.58deg,
   #a40731 -0.38%,
   #830b3a 41.27%,
   #002359 103.58%
 );
+
+@mixin text-button($color: $burgundy) {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  background-color: transparent;
+  border: none;
+  color: $color;
+  font-size: 18px;
+  font-family: "PT Root medium";
+  font-weight: 700;
+}
+
+@mixin colored-button($background: $white) {
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 7px;
+  font-family: "PT Root light";
+  background-color: $background;
+}

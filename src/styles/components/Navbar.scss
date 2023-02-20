@@ -6,14 +6,11 @@
   column-gap: 30px;
   padding-left: 34px;
   align-items: center;
-  background-color: $white;
-  box-shadow: 0 4px 6px -6px gray;
   &__logo {
     width: 200px;
   }
   &__reg {
     display: flex;
-    // width: 215px;
     column-gap: 15px;
     p {
       font-family: "PT Root light";
@@ -26,6 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
     img {
       margin-bottom: 5px;
     }
@@ -45,6 +43,7 @@
   display: flex;
   column-gap: 3.5vw;
   align-items: center;
+  cursor: pointer;
 }
 
 .middle {

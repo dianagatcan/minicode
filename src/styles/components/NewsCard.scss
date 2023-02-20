@@ -1,0 +1,28 @@
+@import "../utility";
+
+.news {
+  background-color: $white;
+  display: inline-block;
+  width: 22vw;
+  border-radius: 7px;
+  &__foto {
+    width: 22vw;
+  }
+  &__body {
+    padding: 20px;
+    h3 {
+      font-family: "PT Root bold";
+      font-size: 24px;
+      line-height: 36px;
+    }
+    p {
+      font-family: "PT Root regular";
+      font-size: 18px;
+      line-height: 27px;
+    }
+    button {
+      @include text-button;
+      padding: 9px 0px;
+    }
+  }
+}

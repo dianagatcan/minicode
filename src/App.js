@@ -1,5 +1,6 @@
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
+import Social from "./components/Social";
 import "./styles/index.scss";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Main />
+      <Social />
     </div>
   );
 }

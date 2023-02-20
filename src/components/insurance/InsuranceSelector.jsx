@@ -1,4 +1,4 @@
-import InsuranceButton from "./InsuranceButton";
+
 import Media from "../utils/Media";
 import "../../styles/components/InsuranceSelector.scss";
 
@@ -18,7 +18,7 @@ const InsuranceSelector = () => {
       <h1>Alege tipul de asigurare</h1>
       <div className="button_container">
         {insuranceTypes.map((insurance) => (
-          <InsuranceButton text={insurance} />
+          <button className="insurance_button">{insurance}</button>
         ))}
         <button className="button">
           Altele

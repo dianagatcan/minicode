@@ -1,0 +1,72 @@
+@import "../utility";
+
+.social {
+  &__form {
+    padding: 80px 16vw;
+    display: flex;
+    column-gap: 20px;
+    background-color: $white;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 33vw;
+    }
+    button {
+      @include colored-button($background: $burgundy);
+      color: $white;
+      align-self: flex-end;
+      padding: 9px 72px;
+      border: none;
+    }
+  }
+  &__news {
+    padding: 80px 16vw;
+    background-color: $alice-blue;
+  }
+}
+
+.form {
+  &__input {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+    input {
+      font-family: "PT Root light";
+      font-size: 18px;
+      border: 1px solid $sauvignon;
+      border-radius: 7px;
+      padding: 12px 15px;
+      color: $dark-gray;
+      flex-grow: 1;
+      cursor: pointer;
+    }
+    input::placeholder {
+      color: $dark-gray;
+    }
+  }
+  &__details {
+    width: 33vw;
+    padding-right: 60px;
+    p {
+      padding-top: 25px;
+      font-family: "PT Root light";
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+}
+
+.news__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  button {
+    @include text-button;
+  }
+}
+
+.news__content {
+  display: flex;
+  gap: 20px;
+}

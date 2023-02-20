@@ -8,7 +8,8 @@
     { "name": "lang", "path": "assets/icons/lang.png" },
     { "name": "messenger", "path": "assets/icons/messenger.png" },
     { "name": "whatsapp", "path": "assets/icons/whatsapp.png" },
-    { "name": "arrow-right", "path": "assets/icons/arrow-right.png" }
+    { "name": "arrow-right", "path": "assets/icons/arrow-right.png" },
+    { "name": "arrow-right-b", "path": "assets/icons/arrow-right-b.png" }
   ],
   "vehicles": [
     {
@@ -55,6 +56,23 @@
       "name": "other-technique",
       "path": "assets/icons/other-technique.png",
       "description": "Echipament suplimentar"
+    }
+  ],
+  "news": [
+    {
+      "name": "news1",
+      "path": "assets/images/news1.png",
+      "title": "Asigură-ți locuința atunci când pleci în vacanță!"
+    },
+    {
+      "name": "news2",
+      "path": "assets/images/news2.png",
+      "title": "Asigură-ți locuința atunci când pleci în vacanță!"
+    },
+    {
+      "name": "news3",
+      "path": "assets/images/news3.png",
+      "title": "Asigură-ți locuința atunci când pleci în vacanță!"
     }
   ]
 }
