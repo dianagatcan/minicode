@@ -15,7 +15,19 @@
     { "name": "w-whatsapp", "path": "assets/icons/w-whatsapp.png" },
     { "name": "w-fb", "path": "assets/icons/w-fb.png" },
     { "name": "w-telegram", "path": "assets/icons/w-telegram.png" },
-    { "name": "w-instagram", "path": "assets/icons/w-instagram.png" }
+    { "name": "w-instagram", "path": "assets/icons/w-instagram.png" },
+    { "name": "close", "path": "assets/icons/close.png" },
+    { "name": "home", "path": "assets/icons/home.png" },
+    { "name": "user", "path": "assets/icons/user.png" },
+    { "name": "check-circle", "path": "assets/icons/check-circle.png" },
+    { "name": "car-asig", "path": "assets/icons/car-asig.png" },
+    { "name": "file", "path": "assets/icons/file.png" },
+    { "name": "star", "path": "assets/icons/star.png" },
+    { "name": "support", "path": "assets/icons/support.png" },
+    { "name": "question", "path": "assets/icons/question.png" },
+    { "name": "phone-m", "path": "assets/icons/phone-m.png" },
+    { "name": "mail", "path": "assets/icons/mail.png" },
+    { "name": "placeholder", "path": "assets/icons/placeholder.png" }
   ],
   "vehicles": [
     {

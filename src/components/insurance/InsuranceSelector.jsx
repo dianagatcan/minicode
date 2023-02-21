@@ -1,4 +1,3 @@
-
 import Media from "../utils/Media";
 import "../../styles/components/InsuranceSelector.scss";
 
@@ -22,7 +21,7 @@ const InsuranceSelector = () => {
         ))}
         <button className="button">
           Altele
-          <Media name="arrow-right" />
+          <Media group="icons" name="arrow-right" />
         </button>
       </div>
     </div>

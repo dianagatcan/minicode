@@ -1,10 +1,10 @@
 const { useState, useEffect } = require("react");
 
-const Media = ({ name, cn }) => {
+const Media = ({ name, cn, onClick, group }) => {
   const [media, setMedia] = useState({});
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:3001/icons`)
+    fetch(`http://127.0.0.1:3001/${group}`)
       .then((response) => response.json())
       .then((data) => {
         const media = data.find((media) => media.name === name);
@@ -13,7 +13,7 @@ const Media = ({ name, cn }) => {
   }, [name]);
 
   return media.path ? (
-    <img className={cn} src={media.path} alt={name} />
+    <img onClick={onClick} className={cn} src={media.path} alt={name} />
   ) : (
     <div></div>
   );

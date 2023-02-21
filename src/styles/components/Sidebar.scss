@@ -28,7 +28,6 @@
   hr.last {
     height: 1px;
     width: 70px;
-    // margin: auto 30px;
     background-color: $sauvignon;
     border: none;
     padding: 0px;
@@ -41,15 +40,9 @@
   &__lang {
     display: flex;
     column-gap: 8px;
-    p:first-of-type {
-      color: $burgundy;
-    }
     hr {
-      width: 1px;
-      margin: 0px;
+      @include vertical-line;
       height: 21px;
-      background-color: $sauvignon;
-      border: none;
     }
   }
 }

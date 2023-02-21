@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="about">
-        <Media name="white-logo" />
+        <Media group="icons" name="white-logo" />
         <p>
           Dezvoltarea companiei MINICODE a fost determinată în mare parte de
           flexibilitatea soluțiilor și ofertelor, adaptivitații față de
@@ -35,11 +35,11 @@ const Footer = () => {
       <div className="media">
         <p className="title">Social media</p>
         <div>
-          <Media name="w-viber" />
-          <Media name="w-whatsapp" />
-          <Media name="w-fb" />
-          <Media name="w-telegram" />
-          <Media name="w-instagram" />
+          <Media group="icons" name="w-viber" />
+          <Media group="icons" name="w-whatsapp" />
+          <Media group="icons" name="w-fb" />
+          <Media group="icons" name="w-telegram" />
+          <Media group="icons" name="w-instagram" />
         </div>
       </div>
     </footer>

@@ -1,19 +1,23 @@
 import { useState } from "react";
 import "../styles/components/Navbar.scss";
+import Menu from "./Menu";
 import Media from "./utils/Media";
 
 const Navbar = () => {
-  const [showLog, setShowLog] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
-  const toggleLog = (event) => {
-    setShowLog(true);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
   };
 
   return (
     <nav className="nav">
       <div className="menu_logo">
-        <Media name="menu1" />
-        <Media name="Logo" cn="nav__logo" />
+        <div>
+          <Media group="icons" onClick={toggleMenu} cn="pointer" name="menu1" />
+          {showMenu ? <Menu onClick={toggleMenu} /> : null}
+        </div>
+        <Media group="icons" name="Logo" cn="nav__logo" />
       </div>
       <div className="middle">
         <hr></hr>
@@ -21,17 +25,12 @@ const Navbar = () => {
         <hr></hr>
       </div>
       <div className="nav__reg">
-        <div className="nav__icon" onClick={toggleLog}>
-          <Media name="users" />
+        <div className="nav__icon">
+          <Media group="icons" name="users" />
           <p>Logare</p>
-          {showLog ? (
-            <div>
-              <h1>Hello</h1>
-            </div>
-          ) : null}
         </div>
         <div className="nav__icon">
-          <Media name="file-reg" />
+          <Media group="icons" name="file-reg" />
           <p>Înregistrare</p>
         </div>
       </div>

@@ -1,9 +1,23 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../styles/components/Social.scss";
 import Media from "./utils/Media";
 import NewsCard from "./utils/NewsCard";
 
 const Social = () => {
+  const [phoneValue, setPhoneValue] = useState("");
+  const maskPhoneValue = (value) => {
+    const prefix = "+373 ";
+    if (value.length < prefix.length && value.length !== 1) {
+      setPhoneValue(prefix);
+    } else {
+      if (value.includes(prefix)) {
+        setPhoneValue(value);
+      } else {
+        setPhoneValue(`${prefix}${value}`);
+      }
+    }
+  };
+
   return (
     <section className="social">
       <div className="social__form">
@@ -19,10 +33,11 @@ const Social = () => {
             <div className="form__input">
               <input type="text" placeholder="Nume/Prenume" />
               <input
+                onChange={(e) => maskPhoneValue(e.target.value)}
                 type="tel"
-                pattern="\+373 \d{2}-\d{3}-\d{3}"
+                maxLength="13"
                 placeholder="+373 __-___-___"
-                maxLength="8"
+                value={phoneValue}
               />
             </div>
             <button type="submit">Trimite</button>
@@ -34,7 +49,7 @@ const Social = () => {
           <h2>Oferte</h2>
           <button>
             Vezi toate ofertele
-            <Media name="arrow-right-b" />
+            <Media group="icons" name="arrow-right-b" />
           </button>
         </div>
         <div className="news__content">
