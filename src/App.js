@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Social from "./components/Social";
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Main />
       <Social />
+      <Footer />
     </div>
   );
 }

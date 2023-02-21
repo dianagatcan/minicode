@@ -4,9 +4,11 @@
   background-color: $white;
   display: inline-block;
   width: 22vw;
+  max-width: 420px;
   border-radius: 7px;
   &__foto {
     width: 22vw;
+    max-width: 420px;
   }
   &__body {
     padding: 20px;

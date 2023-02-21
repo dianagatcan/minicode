@@ -1,0 +1,70 @@
+@import "../utility";
+
+footer {
+  background-color: $burgundy;
+  display: flex;
+  column-gap: 7vw;
+  padding: 80px 16vw;
+  color: $white;
+  font-size: 18px;
+  line-height: 27px;
+  p,
+  li {
+    font-size: 18px;
+    font-family: "PT Root light";
+    margin: 0;
+    line-height: 27px;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "PT Root medium";
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  .about {
+    padding-top: 60px;
+    padding-bottom: 47px;
+    width: 16vw;
+    max-width: 310px;
+    p {
+      padding: 30px 0;
+    }
+    button {
+      @include colored-button;
+      padding: 9px 30px;
+      color: $black;
+      border: 1px solid $burgundy;
+      font-family: "PT Root bold";
+      line-height: 27px;
+    }
+  }
+  .company {
+    padding-top: 60px;
+    width: 11vw;
+    li {
+      padding-bottom: 10px;
+    }
+  }
+  .contacts {
+    padding-top: 60px;
+    padding-right: 59px;
+    width: 8vw;
+    div {
+      p {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .media {
+    width: 11vw;
+    padding-top: 60px;
+    div {
+      display: grid;
+      grid-template-columns: 32px 32px;
+      gap: 30px;
+      //   flex-wrap: wrap;
+      //   padding-right: 5vw;
+    }
+  }
+}

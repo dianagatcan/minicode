@@ -9,7 +9,13 @@
     { "name": "messenger", "path": "assets/icons/messenger.png" },
     { "name": "whatsapp", "path": "assets/icons/whatsapp.png" },
     { "name": "arrow-right", "path": "assets/icons/arrow-right.png" },
-    { "name": "arrow-right-b", "path": "assets/icons/arrow-right-b.png" }
+    { "name": "arrow-right-b", "path": "assets/icons/arrow-right-b.png" },
+    { "name": "white-logo", "path": "assets/icons/white-logo.png" },
+    { "name": "w-viber", "path": "assets/icons/w-viber.png" },
+    { "name": "w-whatsapp", "path": "assets/icons/w-whatsapp.png" },
+    { "name": "w-fb", "path": "assets/icons/w-fb.png" },
+    { "name": "w-telegram", "path": "assets/icons/w-telegram.png" },
+    { "name": "w-instagram", "path": "assets/icons/w-instagram.png" }
   ],
   "vehicles": [
     {

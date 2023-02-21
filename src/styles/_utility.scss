@@ -44,6 +44,7 @@ $gradient: linear-gradient(
   font-size: 18px;
   font-family: "PT Root medium";
   font-weight: 700;
+  cursor: pointer;
 }
 
 @mixin colored-button($background: $white) {
