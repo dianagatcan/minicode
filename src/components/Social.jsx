@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "../styles/components/Social.scss";
 import Media from "./utils/Media";
-import NewsCard from "./utils/NewsCard";
+import News from "./utils/News";
 
 const Social = () => {
   const [phoneValue, setPhoneValue] = useState("");
@@ -35,6 +35,7 @@ const Social = () => {
               <input
                 onChange={(e) => maskPhoneValue(e.target.value)}
                 type="tel"
+                pattern="[0-9]+"
                 maxLength="13"
                 placeholder="+373 __-___-___"
                 value={phoneValue}
@@ -49,13 +50,11 @@ const Social = () => {
           <h2>Oferte</h2>
           <button>
             Vezi toate ofertele
-            <Media group="icons" name="arrow-right-b" />
+            <Media name="arrow-right-b" />
           </button>
         </div>
         <div className="news__content">
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
+          <News />
         </div>
       </div>
     </section>

@@ -63,6 +63,9 @@
   padding-bottom: 30px;
   button {
     @include text-button;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

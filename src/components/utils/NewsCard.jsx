@@ -1,18 +1,16 @@
 import Media from "./Media";
-import foto from "./news1.png";
 import "../../styles/components/NewsCard.scss";
 
-const NewsCard = () => {
-  const description = "Asigură-ți locuința atunci când pleci în vacanță!";
+const NewsCard = ({ name, path, description, title }) => {
   return (
     <div className="news">
-      <Media name="news1" group="news" />
+      <img className="news__foto" src={path} alt={name} />
       <div className="news__body">
-        <h3>{description}</h3>
+        <h3>{title}</h3>
         <p>{`${description.slice(0, 48)}...`}</p>
         <button>
           Vezi mai mult
-          <Media group="icons" name="arrow-right-b" />
+          <Media name="arrow-right-b" />
         </button>
       </div>
     </div>

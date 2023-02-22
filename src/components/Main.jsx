@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <section className="main-container">
       <Sidebar />
-      {/* <InsuranceForm /> */}
+      <InsuranceForm /> 
     </section>
   );
 };

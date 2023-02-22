@@ -14,10 +14,10 @@ const Navbar = () => {
     <nav className="nav">
       <div className="menu_logo">
         <div>
-          <Media group="icons" onClick={toggleMenu} cn="pointer" name="menu1" />
+          <Media onClick={toggleMenu} cn="pointer" name="menu1" />
           {showMenu ? <Menu onClick={toggleMenu} /> : null}
         </div>
-        <Media group="icons" name="Logo" cn="nav__logo" />
+        <Media name="Logo" cn="nav__logo" />
       </div>
       <div className="middle">
         <hr></hr>
@@ -26,11 +26,11 @@ const Navbar = () => {
       </div>
       <div className="nav__reg">
         <div className="nav__icon">
-          <Media group="icons" name="users" />
+          <Media name="users" />
           <p>Logare</p>
         </div>
         <div className="nav__icon">
-          <Media group="icons" name="file-reg" />
+          <Media name="file-reg" />
           <p>Înregistrare</p>
         </div>
       </div>

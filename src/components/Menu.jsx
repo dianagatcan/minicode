@@ -18,50 +18,50 @@ const Menu = ({ onClick }) => {
     <aside>
       <div className="menu">
         <div className="menu__header">
-          <Media group="icons" cn="pointer" onClick={onClick} name="close" />
+          <Media cn="pointer" onClick={onClick} name="close" />
           <h1>Meniu</h1>
         </div>
         <ul className="menu__options">
           <li>
-            <Media group="icons" name="home" />
+            <Media name="home" />
             Pagina Principală
           </li>
           <li>
-            <Media group="icons" name="user" />
+            <Media name="user" />
             Despre Minicode
           </li>
           <li>
-            <Media group="icons" name="check-circle" />
+            <Media name="check-circle" />
             Produse de asigurare
           </li>
           <li>
-            <Media group="icons" name="car-asig" />
+            <Media name="car-asig" />
             Caz asigurat
           </li>
           <li>
-            <Media group="icons" name="file" />
+            <Media name="file" />
             Carieră
           </li>
           <li>
-            <Media group="icons" name="star" />
+            <Media name="star" />
             Oferte
           </li>
           <li>
-            <Media group="icons" name="support" />
+            <Media name="support" />
             Noutăți
           </li>
           <li>
-            <Media group="icons" name="question" />
+            <Media name="question" />
             Întrebări
           </li>
           <li>
-            <Media group="icons" name="phone-m" />
+            <Media name="phone-m" />
             Contacte
           </li>
         </ul>
         <div class="flex"></div>
         <div className="menu__lang">
-          <Media group="icons" name="lang" />
+          <Media name="lang" />
           <p
             className={`${lang == "Рус" ? "selected" : ""}`}
             onClick={() => changeLang("Рус")}
@@ -79,17 +79,16 @@ const Menu = ({ onClick }) => {
         <div>
           <ul className="menu__footer">
             <li>
-              <Media group="icons" name="phone-m" />+ 373 69 845 845
+              <Media name="phone-m" />+ 373 69 845 845
             </li>
             <li>
-              <Media group="icons" name="mail" /> office@minicode.md
+              <Media name="mail" /> office@minicode.md
             </li>
             <li>
-              <Media group="icons" name="home" /> mun. Chișinău, str București,
-              101
+              <Media name="home" /> mun. Chișinău, str București, 101
             </li>
             <li>
-              <Media group="icons" name="placeholder" /> Harta
+              <Media name="placeholder" /> Harta
             </li>
           </ul>
         </div>

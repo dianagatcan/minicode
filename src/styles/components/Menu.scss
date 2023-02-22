@@ -7,7 +7,7 @@ aside {
     transition: 0.2s ease-out;
     background-color: $white;
     padding: 30px;
-    position: fixed;  
+    position: fixed;
     top: 0;
     left: 0;
     height: calc(100vh - 60px);
@@ -88,3 +88,16 @@ aside {
     }
   }
 }
+
+// @media only screen and (max-width: 1500px) {
+//   .menu {
+//     row-gap: 10px;
+//     &__options {
+//       row-gap: 15px;
+//       li {
+//         font-size: 17px;
+//         line-height: 20px;
+//       }
+//     }
+//   }
+// }

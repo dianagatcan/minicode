@@ -1,7 +1,10 @@
 import Media from "../utils/Media";
 import "../../styles/components/InsuranceSelector.scss";
+import { useState } from "react";
 
 const InsuranceSelector = () => {
+  const [moved, setMoved] = useState(false);
+
   const insuranceTypes = [
     "Carte verde",
     "RCA",
@@ -11,17 +14,43 @@ const InsuranceSelector = () => {
     "Bunuri",
     "Locuințe (imobile)",
   ];
+  const executeMove = () => {
+    const overflow = document.querySelector(".overflow");
+    const eased = document.querySelector(".eased");
+    const difference =
+      overflow.scrollWidth - overflow.getBoundingClientRect().width;
+    console.log(`translateX(-${parseInt(difference).toString()})`);
+    if (!moved) {
+      eased.style.transform = `translateX(-${parseInt(
+        difference
+      ).toString()}px)`;
+    } else {
+      eased.style.transform = "";
+    }
+
+    setMoved(!moved);
+  };
 
   return (
     <div className="selector_container">
       <h1>Alege tipul de asigurare</h1>
       <div className="button_container">
-        {insuranceTypes.map((insurance) => (
-          <button className="insurance_button">{insurance}</button>
-        ))}
-        <button className="button">
+        <div className="overflow">
+          <div className={`button_container eased`}>
+            {insuranceTypes.map((insurance) => (
+              <button className="insurance_button">{insurance}</button>
+            ))}
+          </div>
+        </div>
+
+        <button
+          onClick={() => {
+            executeMove();
+          }}
+          className="button"
+        >
           Altele
-          <Media group="icons" name="arrow-right" />
+          <Media name="arrow-right" />
         </button>
       </div>
     </div>

@@ -25,3 +25,11 @@
     @include text-button($color: $white);
   }
 }
+
+.overflow {
+  overflow: hidden;
+}
+
+.eased {
+  transition: ease-in 1s;
+}

@@ -80,17 +80,20 @@
     {
       "name": "news1",
       "path": "assets/images/news1.png",
-      "title": "Asigură-ți locuința atunci când pleci în vacanță!"
+      "title": "Asigură-ți locuința atunci când pleci în vacanță!",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo lacinia dolor vel varius. Aliquam justo arcu, fringilla ullamcorper odio ac, faucibus commodo leo. Sed in massa at ipsum egestas dapibus ut venenatis nisl. Suspendisse quis ligula consectetur, commodo est ac, vehicula ex. "
     },
     {
       "name": "news2",
       "path": "assets/images/news2.png",
-      "title": "Asigură-ți locuința atunci când pleci în vacanță!"
+      "title": "Asigură-ți locuința atunci când pleci în vacanță!",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo lacinia dolor vel varius. Aliquam justo arcu, fringilla ullamcorper odio ac, faucibus commodo leo. Sed in massa at ipsum egestas dapibus ut venenatis nisl. Suspendisse quis ligula consectetur, commodo est ac, vehicula ex. "
     },
     {
       "name": "news3",
       "path": "assets/images/news3.png",
-      "title": "Asigură-ți locuința atunci când pleci în vacanță!"
+      "title": "Asigură-ți locuința atunci când pleci în vacanță!",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo lacinia dolor vel varius. Aliquam justo arcu, fringilla ullamcorper odio ac, faucibus commodo leo. Sed in massa at ipsum egestas dapibus ut venenatis nisl. Suspendisse quis ligula consectetur, commodo est ac, vehicula ex. "
     }
   ]
 }

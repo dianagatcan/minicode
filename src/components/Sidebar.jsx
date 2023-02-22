@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <section className="sidebar">
       <div className="sidebar__item">
-        <Media group="icons" name="lang" />
+        <Media name="lang" />
         <div className="sidebar__lang">
           <p>Рус</p>
           <hr></hr>
@@ -14,17 +14,17 @@ const Sidebar = () => {
       </div>
       <hr></hr>
       <div className="sidebar__item">
-        <Media group="icons" name="phone" />
+        <Media name="phone" />
         <p>Sună</p>
       </div>
       <hr></hr>
       <div className="sidebar__item">
-        <Media group="icons" name="messenger" />
+        <Media name="messenger" />
         <p>Messenger</p>
       </div>
       <hr className="last"></hr>
       <div className="sidebar__item">
-        <Media group="icons" name="whatsapp" />
+        <Media name="whatsapp" />
         <p>Whatsapp</p>
       </div>
     </section>
