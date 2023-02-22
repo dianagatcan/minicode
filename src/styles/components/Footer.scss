@@ -37,6 +37,10 @@ footer {
       border: 1px solid $burgundy;
       font-family: "PT Root bold";
       line-height: 27px;
+      &:hover {
+        color: $white;
+        background-color: $black;
+      }
     }
   }
   .company {

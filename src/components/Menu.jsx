@@ -24,39 +24,39 @@ const Menu = ({ onClick }) => {
         <ul className="menu__options">
           <li>
             <Media name="home" />
-            Pagina Principală
+            <span>Pagina Principală</span>
           </li>
           <li>
             <Media name="user" />
-            Despre Minicode
+            <span>Despre Minicode</span>
           </li>
           <li>
             <Media name="check-circle" />
-            Produse de asigurare
+            <span>Produse de asigurare</span>
           </li>
           <li>
             <Media name="car-asig" />
-            Caz asigurat
+            <span>Caz asigurat</span>
           </li>
           <li>
-            <Media name="file" />
-            Carieră
+            <Media name="file" cn="cariera" />
+            <span>Carieră</span>
           </li>
           <li>
             <Media name="star" />
-            Oferte
+            <span>Oferte</span>
           </li>
           <li>
             <Media name="support" />
-            Noutăți
+            <span>Noutăți</span>
           </li>
           <li>
             <Media name="question" />
-            Întrebări
+            <span>Întrebări</span>
           </li>
           <li>
             <Media name="phone-m" />
-            Contacte
+            <span>Contacte</span>
           </li>
         </ul>
         <div class="flex"></div>
