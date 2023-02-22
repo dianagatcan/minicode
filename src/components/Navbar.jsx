@@ -6,7 +6,7 @@ import Log from "./utils/Log";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [showLog, setShowLog] = useState(true);
+  const [showLog, setShowLog] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);

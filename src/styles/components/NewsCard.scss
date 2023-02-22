@@ -30,7 +30,7 @@
       @include text-button;
       padding: 9px 0px;
       &:hover {
-        text-decoration: underline;
+        color: $burgundy-hover;
       }
     }
   }

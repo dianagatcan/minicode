@@ -56,6 +56,9 @@ const Social = () => {
           <News />
         </div>
       </div>
+      <div className="social__reviews">
+        <h2>Recenziile clienților</h2>
+      </div>
     </section>
   );
 };

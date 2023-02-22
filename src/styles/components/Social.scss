@@ -15,12 +15,13 @@
     button {
       @include colored-button($background: $burgundy);
       color: $white;
+      font-weight: 700;
       align-self: flex-end;
       padding: 9px 72px;
       border: 2px solid $burgundy;
       &:hover {
         border: 2px solid $burgundy;
-        color: $burgundy;
+        color: $black;
         background-color: $white;
       }
     }
@@ -28,6 +29,10 @@
   &__news {
     padding: 80px 16vw;
     background-color: $alice-blue;
+  }
+  &__reviews {
+    padding: 80px 16vw;
+    background-color: $grey;
   }
 }
 
@@ -45,7 +50,11 @@
       padding: 12px 15px;
       color: $dark-gray;
       flex-grow: 1;
+      outline: none;
       cursor: pointer;
+      &:focus {
+        border: 1px solid $burgundy;
+      }
     }
     input::placeholder {
       color: $dark-gray;
@@ -70,7 +79,7 @@
   button {
     @include text-button;
     &:hover {
-      text-decoration: underline;
+      color: $burgundy-hover;
     }
   }
 }
