@@ -12,7 +12,7 @@ const News = () => {
       });
   }, []);
 
-  return news.map((n) => <NewsCard {...n} />);
+  return news.map((n, index) => <NewsCard key={index} {...n} />);
 };
 
 export default News;

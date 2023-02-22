@@ -2,7 +2,7 @@ import Media from "../utils/Media";
 import "../../styles/components/InsuranceSelector.scss";
 import { useState } from "react";
 
-const InsuranceSelector = () => {
+const InsuranceSelector = ({ changeInsurance }) => {
   const [moved, setMoved] = useState(false);
 
   const insuranceTypes = [
@@ -14,6 +14,7 @@ const InsuranceSelector = () => {
     "Bunuri",
     "Locuințe (imobile)",
   ];
+
   const executeMove = () => {
     const overflow = document.querySelector(".overflow");
     const eased = document.querySelector(".eased");
@@ -37,8 +38,14 @@ const InsuranceSelector = () => {
       <div className="button_container">
         <div className="overflow">
           <div className={`button_container eased`}>
-            {insuranceTypes.map((insurance) => (
-              <button className="insurance_button">{insurance}</button>
+            {insuranceTypes.map((insurance, index) => (
+              <button
+                key={index}
+                onClick={(event) => changeInsurance(event)}
+                className="insurance_button"
+              >
+                {insurance}
+              </button>
             ))}
           </div>
         </div>

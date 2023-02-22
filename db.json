@@ -32,49 +32,65 @@
   ],
   "vehicles": [
     {
+      "name": "bike",
+      "path": "assets/icons/bike.png",
+      "CVdescription": "Motocicleta B",
+      "groups": ["Carte Verde"]
+    },
+    {
       "name": "car",
       "path": "assets/icons/car.png",
-      "description": "Autoturism cu până la 9 locuri"
+      "description": "Autoturism cu până la 9 locuri",
+      "CVdescription": "Autoturism A",
+      "groups": ["Carte Verde", "Casco"]
     },
     {
       "name": "minitruck",
       "path": "assets/icons/minitruck.png",
-      "description": "Camion până la 3,5 tone"
+      "description": "Camion până la 3,5 tone",
+      "groups": ["Carte Verde", "Casco"]
     },
     {
       "name": "truck",
       "path": "assets/icons/truck.png",
-      "description": "Camion mai mult de 3,5 tone"
+      "description": "Camion mai mult de 3,5 tone",
+      "groups": ["Carte Verde", "Casco"]
     },
     {
       "name": "minibus",
       "path": "assets/icons/minibus.png",
-      "description": "Microbus până la 20 locuri"
+      "description": "Microbus până la 20 locuri",
+      "groups": ["Carte Verde", "Casco"]
     },
     {
       "name": "bus",
       "path": "assets/icons/bus.png",
-      "description": "Autobuz peste 20 locuri"
+      "description": "Autobuz peste 20 locuri",
+      "groups": ["Carte Verde", "Casco"]
     },
     {
       "name": "trailer",
       "path": "assets/icons/trailer.png",
-      "description": "Remorci, semiremorci"
+      "description": "Remorci, semiremorci",
+      "groups": ["Casco"]
     },
     {
       "name": "refrigerant",
       "path": "assets/icons/refrigerant.png",
-      "description": "Refrigeratoare, cisterne"
+      "description": "Refrigeratoare, cisterne",
+      "groups": ["Casco"]
     },
     {
       "name": "technique",
       "path": "assets/icons/technique.png",
-      "description": "Tehnică specială"
+      "description": "Tehnică specială",
+      "groups": ["Casco"]
     },
     {
       "name": "other-technique",
       "path": "assets/icons/other-technique.png",
-      "description": "Echipament suplimentar"
+      "description": "Echipament suplimentar",
+      "groups": ["Casco"]
     }
   ],
   "news": [
