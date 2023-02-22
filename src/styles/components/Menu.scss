@@ -2,7 +2,7 @@
 
 aside {
   display: flex;
-  // height: 100vh;
+  height: 100vh;
   .menu {
     transition: 0.2s ease-out;
     background-color: $white;
@@ -10,13 +10,19 @@ aside {
     position: fixed;
     top: 0;
     left: 0;
+    height: 100vh;
     height: calc(100vh - 60px);
     z-index: 10;
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    justify-content: space-between;
     font-family: "Arial";
-    box-shadow: 10px 0 5px -2px $sauvignon;
+    box-shadow: 5px -1px 38px 0px $dark-gray;
+    &__part {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+    }
     &__header {
       display: flex;
       flex-direction: st;
@@ -47,7 +53,7 @@ aside {
           cursor: pointer;
         }
         &:hover {
-          text-decoration: underline;
+          opacity: 0.6;
         }
       }
     }
@@ -67,7 +73,7 @@ aside {
         font-size: 18px;
         cursor: pointer;
         &:hover {
-          text-decoration: underline;
+          opacity: 0.5;
         }
       }
       .selected {
@@ -87,22 +93,11 @@ aside {
       img {
         width: 18px;
       }
-    }
-    .flex {
-      flex: 1 1 0;
+      a {
+        &:hover {
+          opacity: 0.6;
+        }
+      }
     }
   }
 }
-
-// @media only screen and (max-width: 1500px) {
-//   .menu {
-//     row-gap: 10px;
-//     &__options {
-//       row-gap: 15px;
-//       li {
-//         font-size: 17px;
-//         line-height: 20px;
-//       }
-//     }
-//   }
-// }

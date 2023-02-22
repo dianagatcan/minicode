@@ -35,7 +35,6 @@ const Social = () => {
               <input
                 onChange={(e) => maskPhoneValue(e.target.value)}
                 type="tel"
-                pattern="[0-9]+"
                 maxLength="13"
                 placeholder="+373 __-___-___"
                 value={phoneValue}

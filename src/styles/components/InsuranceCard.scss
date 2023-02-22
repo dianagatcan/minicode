@@ -1,0 +1,27 @@
+@import "../utility";
+
+.card {
+  background-color: $white;
+  width: 120px;
+  text-align: center;
+  padding: 15px 20px;
+  &_image {
+    width: 50px;
+    padding-bottom: 7px;
+  }
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.insurance_types {
+  width: 33vw;
+  display: grid;
+  // grid-template-columns: auto auto auto;
+  // column-gap: 20px;
+  // row-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

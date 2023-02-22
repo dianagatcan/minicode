@@ -6,6 +6,10 @@
   width: 22vw;
   max-width: 420px;
   border-radius: 7px;
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
   &__foto {
     width: 22vw;
     max-width: 420px;

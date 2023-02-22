@@ -2,14 +2,14 @@ import InsuranceSelector from "./InsuranceSelector";
 
 import "../../styles/components/InsuranceForm.scss";
 import ProgressBar from "./ProgressBar";
+import InsuranceTypes from "../utils/InsuranceType";
 
 const InsuranceForm = () => {
   return (
     <section className="container">
       <div className="main">
         <InsuranceSelector />
-        {/* <VehicleSelector />
-            <InsuranceDetails /> */}
+        <InsuranceTypes />
       </div>
       <ProgressBar />
     </section>

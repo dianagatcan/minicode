@@ -27,7 +27,8 @@
     { "name": "question", "path": "assets/icons/question.png" },
     { "name": "phone-m", "path": "assets/icons/phone-m.png" },
     { "name": "mail", "path": "assets/icons/mail.png" },
-    { "name": "placeholder", "path": "assets/icons/placeholder.png" }
+    { "name": "placeholder", "path": "assets/icons/placeholder.png" },
+    { "name": "close-log", "path": "assets/icons/close-log.png" }
   ],
   "vehicles": [
     {
@@ -36,8 +37,8 @@
       "description": "Autoturism cu până la 9 locuri"
     },
     {
-      "name": "truck1",
-      "path": "assets/icons/truck1.png",
+      "name": "minitruck",
+      "path": "assets/icons/minitruck.png",
       "description": "Camion până la 3,5 tone"
     },
     {

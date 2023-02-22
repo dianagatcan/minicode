@@ -3,7 +3,7 @@
 .nav {
   height: 100px;
   display: flex;
-  column-gap: 30px;
+  column-gap: 1.5vw;
   padding-left: 34px;
   align-items: center;
   &__logo {
@@ -35,7 +35,7 @@
     border-top: 1px solid $sauvignon;
     margin: auto 30px;
   }
-  h1 {
+  &__title {
     text-align: center;
     font-family: "Raleway", sans-serif;
     min-width: 330px;

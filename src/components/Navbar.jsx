@@ -2,12 +2,18 @@ import { useState } from "react";
 import "../styles/components/Navbar.scss";
 import Menu from "./Menu";
 import Media from "./utils/Media";
+import Log from "./utils/Log";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showLog, setShowLog] = useState(true);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
+  };
+
+  const toggleLog = () => {
+    setShowLog(!showLog);
   };
 
   return (
@@ -21,11 +27,12 @@ const Navbar = () => {
       </div>
       <div className="middle">
         <hr></hr>
-        <h1>Cu siguranță, împreună!</h1>
+        <h1 className="nav__title">Cu siguranță, împreună!</h1>
         <hr></hr>
       </div>
       <div className="nav__reg">
-        <div className="nav__icon">
+        <div className="nav__icon" onClick={toggleLog}>
+          {showLog ? <Log onClick={toggleMenu} /> : null}
           <Media name="users" />
           <p>Logare</p>
         </div>
