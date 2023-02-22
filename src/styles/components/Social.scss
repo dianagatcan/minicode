@@ -10,14 +10,19 @@
     form {
       display: flex;
       flex-direction: column;
-      width: 33vw;
+      align-self: flex-end;
     }
     button {
       @include colored-button($background: $burgundy);
       color: $white;
       align-self: flex-end;
       padding: 9px 72px;
-      border: none;
+      border: 2px solid $burgundy;
+      &:hover {
+        border: 2px solid $burgundy;
+        color: $burgundy;
+        background-color: $white;
+      }
     }
   }
   &__news {
@@ -31,6 +36,7 @@
     display: flex;
     gap: 20px;
     padding-bottom: 30px;
+    width: 33vw;
     input {
       font-family: "PT Root light";
       font-size: 18px;
@@ -72,4 +78,10 @@
 .news__content {
   display: flex;
   gap: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .form__input {
+    flex-wrap: wrap;
+  }
 }
