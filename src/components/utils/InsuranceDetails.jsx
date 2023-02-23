@@ -3,21 +3,26 @@ import "../../styles/components/InsuranceDetails.scss";
 import Media from "./Media";
 
 const InsuranceDetails = () => {
-  const [showDetails, setShowDetails] = useState(false);
+  const [showFirst, setShowFirst] = useState(true);
+  const [showSecond, setShowSecond] = useState(false);
 
-  const changeMedia = () => {
-    setShowDetails(!showDetails);
+  const changeMedia = (nr) => {
+    if (nr === 1) {
+      setShowFirst(!showFirst);
+    } else {
+      setShowSecond(!showSecond);
+    }
   };
 
   return (
     <div className="insurance_details">
-      <details>
-        <summary onClick={() => changeMedia()}>
+      <details open>
+        <summary onClick={() => changeMedia(1)}>
           <p> Obiectul asigurării</p>
-          {showDetails ? (
-            <Media cn="summary_close" name="plus" />
-          ) : (
+          {showFirst ? (
             <Media cn="summary_close" name="close-details" />
+          ) : (
+            <Media cn="summary_close" name="plus" />
           )}
         </summary>
         <div className="summary_details">
@@ -32,12 +37,12 @@ const InsuranceDetails = () => {
         </div>
       </details>
       <details>
-        <summary onClick={() => changeMedia()}>
+        <summary onClick={() => changeMedia(2)}>
           <p>Riscuri și obligațiuni</p>
-          {showDetails ? (
-            <Media cn="summary_close" name="plus" />
-          ) : (
+          {showSecond ? (
             <Media cn="summary_close" name="close-details" />
+          ) : (
+            <Media cn="summary_close" name="plus" />
           )}
         </summary>
         <div className="summary_details">
