@@ -15,7 +15,7 @@
 .log {
   display: flex;
   flex-direction: column;
-  width: 510px;
+  width: 27vw;
   background-color: $white;
   position: absolute;
   top: 50%;
@@ -34,12 +34,15 @@
       font-family: "Arial";
       font-weight: 700;
       font-size: 32px;
+      line-height: 48px;
     }
   }
   &__subtitle {
     font-family: "Arial";
     font-weight: 400;
     font-size: 18px;
+    margin: 0;
+    color: $dark-gray;
     span {
       color: $burgundy;
       text-decoration: underline;
@@ -48,6 +51,15 @@
         cursor: pointer;
       }
     }
+  }
+
+  .condition {
+    padding: 30px 0;
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 14px;
+    color: $dark-gray;
+    margin: 0px;
   }
   form {
     display: flex;
@@ -63,18 +75,35 @@
       color: $terms;
       .gradient {
         background: $gradient;
+        background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        cursor: pointer;
       }
     }
+
     input[type="checkbox"] {
-      -webkit-appearance: none;
+      display: none;
+    }
+
+    input[type="checkbox"] + *::before {
+      content: "";
+      vertical-align: bottom;
       width: 16px;
       height: 16px;
-      outline: none;
       border: 1px solid $burgundy;
       border-radius: 4px;
+      display: inline-block;
+      margin-right: 10px;
     }
+
+    input[type="checkbox"]:checked + *::before {
+      content: "✓";
+      color: white;
+      text-align: center;
+      background: $burgundy;
+    }
+
     button {
       @include colored-button;
       background-color: $burgundy;
@@ -100,4 +129,8 @@
       font-size: 18px;
     }
   }
+}
+
+.pointer {
+  cursor: pointer;
 }

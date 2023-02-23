@@ -6,14 +6,22 @@ import Log from "./utils/Log";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [showLog, setShowLog] = useState(false);
+  const [selectedLog, setSelectedLog] = useState("");
+
+  const showPopup = (event) => {
+    if (event.target.dataset.popup) {
+      setSelectedLog(event.target.dataset.popup);
+    } else if (event.target.parentElement.dataset.popup) {
+      setSelectedLog(event.target.parentElement.dataset.popup);
+    }
+  };
+
+  const clearSelectedLog = () => {
+    setSelectedLog("");
+  };
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
-  };
-
-  const toggleLog = () => {
-    setShowLog(!showLog);
   };
 
   return (
@@ -31,14 +39,27 @@ const Navbar = () => {
         <hr></hr>
       </div>
       <div className="nav__reg">
-        <div className="nav__icon" onClick={toggleLog}>
-          {showLog ? <Log onClick={toggleMenu} /> : null}
-          <Media name="users" />
-          <p>Logare</p>
+        {selectedLog ? (
+          <Log onClick={clearSelectedLog} selectedLog={selectedLog} />
+        ) : null}
+        <div
+          data-popup="Logare"
+          onClick={(event) => showPopup(event)}
+          className="nav__icon"
+        >
+          <Media cn="pointer" name="users" />
+          <p className="nav_p">Logare</p>
         </div>
-        <div className="nav__icon">
+        {selectedLog ? (
+          <Log onClick={clearSelectedLog} selectedLog={selectedLog} />
+        ) : null}
+        <div
+          data-popup="Înregistrare"
+          onClick={(event) => showPopup(event)}
+          className="nav__icon"
+        >
           <Media name="file-reg" />
-          <p>Înregistrare</p>
+          <p className="nav_p">Înregistrare</p>
         </div>
       </div>
     </nav>

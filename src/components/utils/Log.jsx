@@ -1,32 +1,54 @@
 import "../../styles/components/Log.scss";
 import Media from "./Media";
 
-const Log = () => {
+const Log = ({ onClick, selectedLog }) => {
   return (
     <div className="close">
       <div className="log">
         <div className="log__header">
-          <h1 className="title">Înregistrează-te</h1>
-          <Media name="close-log" />
+          <h1 className="title">
+            {selectedLog === "Înregistrare"
+              ? "Înregistrează-te"
+              : "Loghează-te"}
+          </h1>
+          <Media cn="pointer" onClick={onClick} name="close-log" />
         </div>
-        <p className="log__subtitle">
-          Deja ai un cont? <span>Loghează-te</span>
-        </p>
+        <div className="log__subtitle">
+          {selectedLog === "Înregistrare" ? (
+            <p className="log__subtitle">
+              Deja ai un cont? <span>Loghează-te</span>
+            </p>
+          ) : (
+            <p className="log__subtitle">
+              Nu ai cont? <span>Înregistrează-te</span>
+            </p>
+          )}
+        </div>
         <form>
           <div className="log__data">
             <input type="email" placeholder="Email"></input>
             <input type="password" placeholder="Parola"></input>
-            <input type="password" placeholder="Confirmă parola"></input>
+            {selectedLog === "Înregistrare" ? (
+              <input type="password" placeholder="Confirmă parola"></input>
+            ) : null}
           </div>
-          <label>
-            <input type="checkbox"></input>
-            <p>
-              Sunt de acord cu
-              <span className="gradient"> Termenii și condițiile</span>{" "}
-              site-ului
-            </p>
-          </label>
-          <button type="submit">Înregistrare</button>
+
+          {selectedLog === "Înregistrare" ? (
+            <label>
+              <input type="checkbox"></input>
+              <p>
+                Sunt de acord cu
+                <span className="gradient"> Termenii și condițiile</span>{" "}
+                site-ului
+              </p>
+            </label>
+          ) : (
+            <p className="condition">Ai uitat parola?</p>
+          )}
+
+          <button type="submit">
+            {selectedLog === "Înregistrare" ? "Înregistrare" : "Logare"}
+          </button>
         </form>
       </div>
     </div>
