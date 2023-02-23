@@ -5,7 +5,7 @@ import "../../styles/components/InsuranceTypes.scss";
 import { useEffect, useState } from "react";
 
 const InsuranceTypes = ({ selectedInsurance }) => {
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(1);
 
   const decideRender = () => {
     switch (selectedInsurance) {

@@ -1,0 +1,84 @@
+@import "../../utility";
+
+.step2_container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 37px;
+  row-gap: 20px;
+  h1 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 36px;
+    padding-bottom: 20px;
+  }
+  label {
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  &__input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    input {
+      font-family: "PT Root light";
+      font-size: 18px;
+      line-height: 27px;
+      border-radius: 7px;
+      padding: 9px 15px;
+      border: 1px solid $sauvignon;
+      color: $dark-gray;
+    }
+  }
+  &__year {
+    padding-top: 20px;
+    .radio_group {
+      padding-top: 20px;
+      display: flex;
+      column-gap: 20px;
+      input {
+        margin: 3px;
+        -webkit-appearance: none;
+        appearance: none;
+        height: 20px;
+        width: 20px;
+        color: $black;
+        border: 0.5px solid $label-gray;
+        border-radius: 50%;
+        transform: translateY(-0.075em);
+        &:checked {
+          border: 0.5px solid $burgundy;
+          background: radial-gradient(currentcolor 50%, rgba(255, 0, 0, 0) 51%);
+        }
+      }
+
+      label {
+        font-family: "Arial";
+        font-size: 14px;
+        line-height: 21px;
+        color: $label-gray;
+      }
+
+      hr {
+        @include vertical-line;
+        height: 6px;
+      }
+
+      .radio_button {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        align-items: center;
+        label.checked {
+          color: black;
+        }
+        hr.checked {
+          background-color: black;
+        }
+      }
+    }
+  }
+}
