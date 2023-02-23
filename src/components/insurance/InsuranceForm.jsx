@@ -1,6 +1,6 @@
 import InsuranceSelector from "./InsuranceSelector";
 import "../../styles/components/InsuranceForm.scss";
-import InsuranceTypes from "../utils/InsuranceType";
+import InsuranceTypes from "../utils/InsuranceTypes";
 import { useEffect, useState } from "react";
 import InsuranceDetails from "../utils/InsuranceDetails";
 
@@ -32,10 +32,7 @@ const InsuranceForm = () => {
         <InsuranceTypes selectedInsurance={selectedInsurance} />
         <InsuranceDetails first={first} second={second} />
       </div>
-      <div className="form-container__buttons">
-        <button>Înapoi</button>
-        <button>Înainte</button>
-      </div>
+
     </section>
   );
 };

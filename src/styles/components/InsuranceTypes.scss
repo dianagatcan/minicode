@@ -1,0 +1,16 @@
+@import "../utility";
+
+.form-container {
+  &__buttons {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    button {
+      @include colored-button;
+    }
+  }
+}
+
+.left-insurance {
+  flex: 1 1 0;
+}

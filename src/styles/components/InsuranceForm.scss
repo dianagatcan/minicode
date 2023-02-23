@@ -12,12 +12,4 @@
     display: flex;
     column-gap: 20px;
   }
-  &__buttons {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    button {
-      @include colored-button;
-    }
-  }
 }
