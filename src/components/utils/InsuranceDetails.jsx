@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../../styles/components/InsuranceDetails.scss";
 import Media from "./Media";
 
-const InsuranceDetails = () => {
+const InsuranceDetails = ({first,second}) => {
   const [showFirst, setShowFirst] = useState(true);
   const [showSecond, setShowSecond] = useState(false);
 
@@ -15,7 +15,7 @@ const InsuranceDetails = () => {
   };
 
   return (
-    <div className="insurance_details">
+    <div className="right_insurance">
       <details open>
         <summary onClick={() => changeMedia(1)}>
           <p> Obiectul asigurării</p>
@@ -28,11 +28,7 @@ const InsuranceDetails = () => {
         <div className="summary_details">
           <hr></hr>
           <p>
-            Autovehicule înmatriculate în Republica Moldova, care aparţin
-            persoanelor fizice şi juridice. Echipamentul suplimentar, care nu
-            intră în dotarea autovehiculului conform listei de dotări ale uzinei
-            producătoare. Conducătorul auto şi pasagerii, pentru cazuri de
-            accidente care pot avea loc în timpul accidentelor rutiere.
+            {first}
           </p>
         </div>
       </details>
@@ -48,11 +44,7 @@ const InsuranceDetails = () => {
         <div className="summary_details">
           <hr></hr>
           <p>
-            Autovehicule înmatriculate în Republica Moldova, care aparţin
-            persoanelor fizice şi juridice. Echipamentul suplimentar, care nu
-            intră în dotarea autovehiculului conform listei de dotări ale uzinei
-            producătoare. Conducătorul auto şi pasagerii, pentru cazuri de
-            accidente care pot avea loc în timpul accidentelor rutiere.
+          {second}
           </p>
         </div>
       </details>
