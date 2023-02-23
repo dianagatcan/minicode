@@ -58,7 +58,7 @@ const Navbar = () => {
           onClick={(event) => showPopup(event)}
           className="nav__icon"
         >
-          <Media name="file-reg" />
+          <Media cn="pointer" name="file-reg" />
           <p className="nav_p">Înregistrare</p>
         </div>
       </div>

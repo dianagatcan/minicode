@@ -1,6 +1,7 @@
-import "../../styles/components/InsuranceCard.scss";
+import Rca from "../pages/Rca";
 import CarteVerde from "../pages/CarteVerde";
 import Casco from "../pages/Casco";
+import "../../styles/components/InsuranceCard.scss";
 
 const InsuranceTypes = ({ selectedInsurance }) => {
   const decideRender = () => {
@@ -9,12 +10,14 @@ const InsuranceTypes = ({ selectedInsurance }) => {
         return <Casco />;
       case "Carte verde":
         return <CarteVerde />;
+      case "RCA":
+        return <Rca />;
       default:
         break;
     }
   };
 
-  return decideRender();
+  return <div className="left-insurance">{decideRender()}</div>;
 };
 
 export default InsuranceTypes;

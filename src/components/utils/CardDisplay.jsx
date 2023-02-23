@@ -1,10 +1,10 @@
-import "../../styles/components/InsuranceCard.scss";
 import InsuranceCard from "./InsuranceCard";
+import "../../styles/components/InsuranceCard.scss";
 
 const CardDisplay = ({ types }) => {
   return (
     <div>
-      <h1>Alege tipul autovehicului</h1>
+      <h1 className="name_container">Alege tipul autovehicului</h1>
       <div className="insurance_types">
         {types.map((t, index) => (
           <InsuranceCard key={index} {...t} />

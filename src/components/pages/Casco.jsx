@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "../../styles/components/InsuranceCard.scss";
 import CardDisplay from "../utils/CardDisplay";
 
 const Casco = () => {
@@ -16,15 +15,7 @@ const Casco = () => {
       });
   }, []);
 
-  return (
-    <div>
-      <CardDisplay types={types}/>
-      <div>
-        <button>Înapoi</button>
-        <button>Înainte</button>
-      </div>
-    </div>
-  );
+  return <CardDisplay types={types} />;
 };
 
 export default Casco;

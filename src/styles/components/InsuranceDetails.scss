@@ -1,0 +1,55 @@
+@import "../utility";
+
+.insurance_details {
+  padding-top: 76px;
+  // width: 33vw;
+  flex: 1 1 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  details > summary {
+    list-style: none;
+  }
+
+  details {
+    background-color: $white;
+    border-radius: 7px;
+    box-shadow: 0px 5px 15px 2px rgba(27, 25, 24, 0.05);
+    display: flex;
+    flex-direction: column;
+  }
+  .summary_details {
+    p {
+      font-family: "PT Root regular";
+      font-size: 14px;
+      line-height: 21px;
+      color: $dark-gray;
+      padding: 20px 39px 20px 20px;
+      margin: 0;
+    }
+    hr {
+      height: 1px;
+
+      background: #a40731;
+      opacity: 0.1;
+    }
+  }
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      padding: 10px 20px;
+      margin: 0;
+      font-family: "PT Root medium";
+      font-size: 18px;
+      line-height: 27px;
+      color: $dark-gray;
+      font-weight: bold;
+    }
+    .summary_close {
+      padding-right: 20px;
+    }
+  }
+}

@@ -1,10 +1,25 @@
-.main {
-  width: 68vw;
-  padding: 105px 0;
-}
+@import "../utility";
 
-.container {
+.form-container {
   display: flex;
-  column-gap: 11vw;
-  width: calc(100vw - 11vw - 100px);
+  max-width: 1300px;
+  height: calc(100vh - 100px);
+  .main {
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5vw;
+    &__form {
+      display: flex;
+      column-gap: 20px;
+    }
+    &__buttons {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      button {
+        @include colored-button;
+      }
+    }
+  }
 }

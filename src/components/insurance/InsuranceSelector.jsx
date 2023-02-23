@@ -54,7 +54,7 @@ const InsuranceSelector = ({ changeInsurance }) => {
           onClick={() => {
             executeMove();
           }}
-          className="button"
+          className="button-others"
         >
           Altele
           <Media name="arrow-right" />

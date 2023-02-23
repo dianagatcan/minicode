@@ -1,7 +1,14 @@
 @import "../utility";
 
 .main-container {
+  height: calc(100vh - 100px);
+  column-gap: 10.9vw;
   display: flex;
-  gap: 11vw;
   background-color: $grey;
 }
+
+// 1920
+// 100 210 1300 210 100
+
+// 1440
+// 100 100      100 100

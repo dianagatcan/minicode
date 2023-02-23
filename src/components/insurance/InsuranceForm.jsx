@@ -1,9 +1,8 @@
 import InsuranceSelector from "./InsuranceSelector";
-
 import "../../styles/components/InsuranceForm.scss";
-import ProgressBar from "./ProgressBar";
 import InsuranceTypes from "../utils/InsuranceType";
 import { useState } from "react";
+import InsuranceDetails from "../utils/InsuranceDetails";
 
 const InsuranceForm = () => {
   const [selectedInsurance, setSelectedInsurance] = useState("Casco");
@@ -13,12 +12,20 @@ const InsuranceForm = () => {
   };
 
   return (
-    <section className="container">
+    <section className="form-container">
       <div className="main">
-        <InsuranceSelector changeInsurance={changeInsurance} />
-        <InsuranceTypes selectedInsurance={selectedInsurance} />
+        <div className="main__selector">
+          <InsuranceSelector changeInsurance={changeInsurance} />
+        </div>
+        <div className="main__form">
+          <InsuranceTypes selectedInsurance={selectedInsurance} />
+          <InsuranceDetails />
+        </div>
+        <div className="main__buttons">
+          <button>Înapoi</button>
+          <button>Înainte</button>
+        </div>
       </div>
-      <ProgressBar />
     </section>
   );
 };
