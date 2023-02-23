@@ -8,7 +8,7 @@ const Main = () => {
     <section className="main-container">
       <Sidebar />
       <InsuranceForm />
-      {/* <ProgressBar /> */}
+      <ProgressBar />
     </section>
   );
 };

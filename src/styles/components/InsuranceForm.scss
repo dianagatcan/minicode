@@ -2,24 +2,22 @@
 
 .form-container {
   display: flex;
+  flex-direction: column;
+  row-gap: 1.5vw;
+  padding-top: 5vh;
   max-width: 1300px;
+  width: 68vw;
   height: calc(100vh - 100px);
-  .main {
-    padding-top: 5vw;
+  &__form {
     display: flex;
-    flex-direction: column;
-    row-gap: 1.5vw;
-    &__form {
-      display: flex;
-      column-gap: 20px;
-    }
-    &__buttons {
-      width: 50%;
-      display: flex;
-      justify-content: space-between;
-      button {
-        @include colored-button;
-      }
+    column-gap: 20px;
+  }
+  &__buttons {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    button {
+      @include colored-button;
     }
   }
 }

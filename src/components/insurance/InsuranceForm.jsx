@@ -13,18 +13,14 @@ const InsuranceForm = () => {
 
   return (
     <section className="form-container">
-      <div className="main">
-        <div className="main__selector">
-          <InsuranceSelector changeInsurance={changeInsurance} />
-        </div>
-        <div className="main__form">
-          <InsuranceTypes selectedInsurance={selectedInsurance} />
-          <InsuranceDetails />
-        </div>
-        <div className="main__buttons">
-          <button>Înapoi</button>
-          <button>Înainte</button>
-        </div>
+      <InsuranceSelector changeInsurance={changeInsurance} />
+      <div className="form-container__form">
+        <InsuranceTypes selectedInsurance={selectedInsurance} />
+        <InsuranceDetails />
+      </div>
+      <div className="form-container__buttons">
+        <button>Înapoi</button>
+        <button>Înainte</button>
       </div>
     </section>
   );

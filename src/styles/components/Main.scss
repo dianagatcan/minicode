@@ -2,8 +2,8 @@
 
 .main-container {
   height: calc(100vh - 100px);
-  column-gap: 10.9vw;
   display: flex;
+  justify-content: space-between;
   background-color: $grey;
 }
 
