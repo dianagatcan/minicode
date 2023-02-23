@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const InsuranceSelector = ({ changeInsurance }) => {
   const [moved, setMoved] = useState(false);
+  const [active, setActive] = useState(2);
 
   const insuranceTypes = [
     "Carte verde",
@@ -40,11 +41,17 @@ const InsuranceSelector = ({ changeInsurance }) => {
           <div className={`button_container eased`}>
             {insuranceTypes.map((insurance, index) => (
               <button
+                data={insurance}
                 key={index}
-                onClick={(event) => changeInsurance(event)}
-                className="insurance_button"
+                onClick={(event) => {
+                  setActive(index);
+                  changeInsurance(event);
+                }}
+                className={`insurance_button ${
+                  index === active ? "active" : ""
+                } `}
               >
-                {insurance}
+                {index !== active ? insurance : ""}
               </button>
             ))}
           </div>

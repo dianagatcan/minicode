@@ -27,7 +27,27 @@
     }
   }
   .active {
-    color: red;
+    position: relative;
+    z-index: 1;
+    background: $gradient;
+  }
+  .active::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-radius: 4px;
+    background-color: white;
+    z-index: -1;
+  }
+  .active::after {
+    content: attr(data);
+    background: $gradient;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms;
   }
 }
 
