@@ -1,0 +1,28 @@
+@import "../utility";
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  color: $label-gray;
+  cursor: pointer;
+
+  .checkbox__input {
+    display: none;
+  }
+
+  .checkbox__box {
+    width: 16px;
+    height: 16px;
+    border: 1px solid $burgundy;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+
+  .checkbox__input:checked + .checkbox__box {
+    content: url("../../../public/assets/icons/check.png");
+  }
+
+  .checkbox__input:checked + .checkbox__box + p {
+    color: $black;
+  }
+}

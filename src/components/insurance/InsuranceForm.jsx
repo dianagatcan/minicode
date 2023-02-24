@@ -32,7 +32,6 @@ const InsuranceForm = () => {
         <InsuranceTypes selectedInsurance={selectedInsurance} />
         <InsuranceDetails first={first} second={second} />
       </div>
-
     </section>
   );
 };

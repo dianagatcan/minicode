@@ -1,0 +1,35 @@
+@import "../utility";
+
+.cost {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+  }
+  &__total {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    h1 {
+      font-size: 32px;
+      font-family: "Arial";
+    }
+    p {
+      font-size: 20px;
+      font-family: "Arial";
+    }
+  }
+  p {
+    font-family: "Arial";
+    font-size: 20px;
+    margin: 0;
+  }
+  span {
+    font-family: "Arial";
+
+    font-size: 32px;
+  }
+}

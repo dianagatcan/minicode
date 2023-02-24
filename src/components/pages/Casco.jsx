@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import CardDisplay from "../utils/CardDisplay";
 import "../../styles/components/pages/Casco.scss";
+import CostCard from "../utils/CostCard";
+import Checkbox from "../utils/Checkbox";
 
 const Casco = ({ step }) => {
   const [types, setTypes] = useState([]);
-  const [checked, setChecked] = useState(undefined);
 
   const showStep = () => {
     switch (step) {
@@ -28,18 +29,9 @@ const Casco = ({ step }) => {
                 {Array.from({ length: 12 }, (_, i) => 2010 + i).map(
                   (year, index) => (
                     <div key={`div${index}`} className="radio_button">
-                      <input
-                        // checked={index === checked}
-                        onClick={() => {
-                          setChecked(index);
-                        }}
-                        name="year"
-                        type="radio"
-                      ></input>
-                      <hr className={checked === index ? "checked" : ""}></hr>
-                      <label className={checked === index ? "checked" : ""}>
-                        {year}
-                      </label>
+                      <input name="year" type="radio"></input>
+                      <hr></hr>
+                      <label>{year}</label>
                     </div>
                   )
                 )}
@@ -48,7 +40,37 @@ const Casco = ({ step }) => {
           </div>
         );
       case 2:
-        return <div>step3</div>;
+      case 3:
+        return (
+          <div className="step3_container">
+            {step === 2 ? (
+              <h1>Alege valoarea pe piață</h1>
+            ) : (
+              <h1>Prețul final</h1>
+            )}
+
+            <div className="step3_container__input">
+              <label>Valoarea de piață ( € )</label>
+              <input type="number" placeholder="0"></input>
+            </div>
+            <div className="step3_container__teritoriu">
+              <label>Teritoriul de acoperire CASCO</label>
+              <div className="checkbox-container">
+                <Checkbox label="RM" />
+                <Checkbox label="RM + CSI" />
+                <Checkbox label="RM + CSI + EU + TURCIA" />
+              </div>
+            </div>
+            <div className="step3_container__franciza">
+              <label>Franciza</label>
+              <div className="checkbox-container">
+                <Checkbox label="Cu aplicarea francizei" />
+                <Checkbox label="Fara franciza" />
+              </div>
+            </div>
+            {step === 3 ? <CostCard price="153" /> : null}
+          </div>
+        );
       default:
         return <div>Not yet implemented 😅</div>;
     }

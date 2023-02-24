@@ -2,10 +2,10 @@ import Rca from "../pages/Rca";
 import CarteVerde from "../pages/CarteVerde";
 import Casco from "../pages/Casco";
 import "../../styles/components/InsuranceTypes.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const InsuranceTypes = ({ selectedInsurance }) => {
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(0);
 
   const decideRender = () => {
     switch (selectedInsurance) {

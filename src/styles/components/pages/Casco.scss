@@ -1,37 +1,24 @@
 @import "../../utility";
+.left-insurance h1 {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 36px;
+}
+.left-insurance label {
+  font-family: "Arial";
+  font-size: 18px;
+}
 
 .step2_container {
   display: flex;
   flex-direction: column;
   padding-right: 37px;
   row-gap: 20px;
-  h1 {
-    font-family: "Raleway";
-    font-weight: 800;
-    font-size: 28px;
-    line-height: 36px;
-    padding-bottom: 20px;
-  }
-  label {
-    font-family: "Arial";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-  }
-  &__input {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
 
-    input {
-      font-family: "PT Root light";
-      font-size: 18px;
-      line-height: 27px;
-      border-radius: 7px;
-      padding: 9px 15px;
-      border: 1px solid $sauvignon;
-      color: $dark-gray;
-    }
+  &__input {
+    padding-top: 20px;
+    @include insurance-input;
   }
   &__year {
     padding-top: 20px;
@@ -72,13 +59,29 @@
         flex-direction: column;
         row-gap: 5px;
         align-items: center;
-        label.checked {
+        input:checked + label {
           color: black;
         }
-        hr.checked {
+        input:checked + hr {
           background-color: black;
         }
       }
     }
+  }
+}
+
+.step3_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding-right: 37px;
+
+  .checkbox-container {
+    display: flex;
+    column-gap: 40px;
+  }
+  &__input {
+    @include insurance-input;
+    color: $dark-gray;
   }
 }

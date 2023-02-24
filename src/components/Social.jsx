@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import "../styles/components/Social.scss";
 import Media from "./utils/Media";
 import News from "./utils/News";
