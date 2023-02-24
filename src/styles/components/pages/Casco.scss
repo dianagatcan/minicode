@@ -16,10 +16,6 @@
   padding-right: 37px;
   row-gap: 20px;
 
-  // &__input {
-  //   padding-top: 20px;
-  //   @include insurance-input;
-  // }
   &__year {
     padding-top: 20px;
     .radio_group {
@@ -41,7 +37,6 @@
     padding-top: 15px;
   }
   &__input {
-    // @include insurance-input;
     color: $dark-gray;
   }
 }

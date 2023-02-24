@@ -1,9 +1,9 @@
 import "../../styles/components/Utils.scss";
 
-const Checkbox = ({ label }) => {
+const Checkbox = ({ label, group }) => {
   return (
     <label className="checkbox">
-      <input className="checkbox__input" type="radio" name="teritoriu"></input>
+      <input className="checkbox__input" type="radio" name={group}></input>
       <div className="checkbox__box"></div>
       <p>{label}</p>
     </label>

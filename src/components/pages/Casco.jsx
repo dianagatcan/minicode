@@ -48,16 +48,16 @@ const Casco = ({ step }) => {
             <div className="step3_container__teritoriu">
               <label>Teritoriul de acoperire CASCO</label>
               <div className="checkbox-container">
-                <Checkbox label="RM" />
-                <Checkbox label="RM + CSI" />
-                <Checkbox label="RM + CSI + EU + TURCIA" />
+                <Checkbox label="RM" group="teritoriu" />
+                <Checkbox label="RM + CSI" group="teritoriu" />
+                <Checkbox label="RM + CSI + EU + TURCIA" group="teritoriu" />
               </div>
             </div>
             <div className="step3_container__franciza">
               <label>Franciza</label>
               <div className="checkbox-container">
-                <Checkbox label="Cu aplicarea francizei" />
-                <Checkbox label="Fara franciza" />
+                <Checkbox label="Cu aplicarea francizei" group="franciza" />
+                <Checkbox label="Fara franciza" group="franciza" />
               </div>
             </div>
             {step === 3 ? <CostCard price="153" /> : null}

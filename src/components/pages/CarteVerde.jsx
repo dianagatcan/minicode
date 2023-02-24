@@ -32,9 +32,15 @@ const CarteVerde = ({ step }) => {
             <div className="cv_container__zona">
               <label>Zona de deplasare</label>
               <div className="checkbox-container">
-                <Checkbox label="Ucraina, Belarus" />
-                <Checkbox label="Ucraina, Belarus, Federația Rusă" />
-                <Checkbox label="Țările membre ale sistemului Carte Verde, Europa" />
+                <Checkbox label="Ucraina, Belarus" group="zona" />
+                <Checkbox
+                  label="Ucraina, Belarus, Federația Rusă"
+                  group="zona"
+                />
+                <Checkbox
+                  label="Țările membre ale sistemului Carte Verde, Europa"
+                  group="zona"
+                />
               </div>
             </div>
             <div className="cv_container__valid">
