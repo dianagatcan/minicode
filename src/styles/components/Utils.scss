@@ -86,3 +86,31 @@
     color: $dark-gray;
   }
 }
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  label {
+    font-family: "Arial";
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .text {
+    font-family: "PT Root light";
+    color: $dark-gray;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  div.rounded {
+    border-radius: 7px;
+    border: 1px solid $sauvignon;
+    padding: 9px auto 9px 15px;
+  }
+  .Dropdown-option.is-selected {
+    background-color: $white;
+  }
+  .Dropdown-option:hover {
+    background-color: $white;
+  }
+}
