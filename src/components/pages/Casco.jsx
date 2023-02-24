@@ -4,6 +4,7 @@ import "../../styles/components/pages/Casco.scss";
 import CostCard from "../utils/CostCard";
 import Checkbox from "../utils/Checkbox";
 import RadioCheck from "../utils/RadioCheck";
+import Input from "../utils/Input";
 
 const Casco = ({ step }) => {
   const [types, setTypes] = useState([]);
@@ -16,14 +17,8 @@ const Casco = ({ step }) => {
         return (
           <div className="step2_container">
             <h1>Alege marca</h1>
-            <div className="step2_container__input">
-              <label>Marca</label>
-              <input type="text" placeholder="Introduceți marca"></input>
-            </div>
-            <div className="step2_container__input">
-              <label>Model</label>
-              <input type="text" placeholder="Introduceți modelul"></input>
-            </div>
+            <Input label="Marca" type="text" placeholder="Introduceți marca" />
+            <Input label="Model" type="text" placeholder="Introduceți model" />
             <div className="step2_container__year">
               <label>Anul producerii</label>
               <div className="radio_group">
@@ -45,11 +40,11 @@ const Casco = ({ step }) => {
             ) : (
               <h1>Prețul final</h1>
             )}
-
-            <div className="step3_container__input">
-              <label>Valoarea de piață ( € )</label>
-              <input type="number" placeholder="0"></input>
-            </div>
+            <Input
+              label="Valoarea de piață ( € )"
+              type="number"
+              placeholder="0"
+            />
             <div className="step3_container__teritoriu">
               <label>Teritoriul de acoperire CASCO</label>
               <div className="checkbox-container">

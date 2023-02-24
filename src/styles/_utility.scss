@@ -66,18 +66,3 @@ $gradient: linear-gradient(
   background-color: $sauvignon;
   border: none;
 }
-
-@mixin insurance-input {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  input {
-    font-family: "PT Root light";
-    font-size: 18px;
-    line-height: 27px;
-    border-radius: 7px;
-    padding: 9px 15px;
-    border: 1px solid $sauvignon;
-    color: $dark-gray;
-  }
-}
