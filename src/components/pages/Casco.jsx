@@ -3,6 +3,7 @@ import CardDisplay from "../utils/CardDisplay";
 import "../../styles/components/pages/Casco.scss";
 import CostCard from "../utils/CostCard";
 import Checkbox from "../utils/Checkbox";
+import RadioCheck from "../utils/RadioCheck";
 
 const Casco = ({ step }) => {
   const [types, setTypes] = useState([]);
@@ -28,11 +29,7 @@ const Casco = ({ step }) => {
               <div className="radio_group">
                 {Array.from({ length: 12 }, (_, i) => 2010 + i).map(
                   (year, index) => (
-                    <div key={`div${index}`} className="radio_button">
-                      <input name="year" type="radio"></input>
-                      <hr></hr>
-                      <label>{year}</label>
-                    </div>
+                    <RadioCheck index={index} unit={year} />
                   )
                 )}
               </div>

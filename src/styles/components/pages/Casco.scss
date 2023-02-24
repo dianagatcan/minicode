@@ -26,46 +26,6 @@
       padding-top: 20px;
       display: flex;
       column-gap: 20px;
-      input {
-        margin: 3px;
-        -webkit-appearance: none;
-        appearance: none;
-        height: 20px;
-        width: 20px;
-        color: $black;
-        border: 0.5px solid $label-gray;
-        border-radius: 50%;
-        transform: translateY(-0.075em);
-        &:checked {
-          border: 0.5px solid $burgundy;
-          background: radial-gradient(currentcolor 50%, rgba(255, 0, 0, 0) 51%);
-        }
-      }
-
-      label {
-        font-family: "Arial";
-        font-size: 14px;
-        line-height: 21px;
-        color: $label-gray;
-      }
-
-      hr {
-        @include vertical-line;
-        height: 6px;
-      }
-
-      .radio_button {
-        display: flex;
-        flex-direction: column;
-        row-gap: 5px;
-        align-items: center;
-        input:checked + label {
-          color: black;
-        }
-        input:checked + hr {
-          background-color: black;
-        }
-      }
     }
   }
 }
@@ -75,10 +35,10 @@
   flex-direction: column;
   row-gap: 40px;
   padding-right: 37px;
-
   .checkbox-container {
     display: flex;
     column-gap: 40px;
+    padding-top: 15px;
   }
   &__input {
     @include insurance-input;

@@ -1,34 +1,22 @@
 @import "../../utility";
 
 .cv_container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 37px;
+  row-gap: 40px;
   .checkbox-container {
     display: flex;
-    column-gap: 40px;
-    .checkbox {
+    flex-direction: column;
+    margin: 0;
+    row-gap: 20px;
+    padding-top: 15px;
+  }
+  &__valid {
+    .radio_group {
+      padding-top: 20px;
       display: flex;
-      align-items: center;
-      color: $label-gray;
-      cursor: pointer;
-    }
-
-    .checkbox__input {
-      display: none;
-    }
-
-    .checkbox__box {
-      width: 16px;
-      height: 16px;
-      border: 1px solid $burgundy;
-      border-radius: 4px;
-      margin-right: 10px;
-    }
-
-    .checkbox__input:checked + .checkbox__box {
-      content: url("../../../../public/assets/icons/check.png");
-    }
-
-    .checkbox__input:checked + .checkbox__box + p {
-      color: $black;
+      column-gap: 20px;
     }
   }
 }

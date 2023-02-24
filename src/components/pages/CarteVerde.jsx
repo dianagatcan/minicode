@@ -2,9 +2,23 @@ import { useEffect, useState } from "react";
 import CardDisplay from "../utils/CardDisplay";
 import "../../styles/components/pages/CarteVerde.scss";
 import Checkbox from "../utils/Checkbox";
+import RadioCheck from "../utils/RadioCheck";
+import CostCard from "../utils/CostCard";
 
 const CarteVerde = ({ step }) => {
   const [types, setTypes] = useState([]);
+  const validation = [
+    "15 Zile",
+    "1 Luna",
+    "2 Luni",
+    "3 Luni",
+    "4 Luni",
+    "5 Luni",
+    "6 Luni",
+    "7 Luni",
+    "8 Luni",
+    "9 Luni",
+  ];
 
   const showStep = () => {
     switch (step) {
@@ -23,6 +37,15 @@ const CarteVerde = ({ step }) => {
                 <Checkbox label="Țările membre ale sistemului Carte Verde, Europa" />
               </div>
             </div>
+            <div className="cv_container__valid">
+              <label>Valabilitatea poliței</label>
+              <div className="radio_group">
+                {validation.map((period, index) => (
+                  <RadioCheck index={index} unit={period} />
+                ))}
+              </div>
+            </div>
+            {step === 2 ? <CostCard price="153" /> : null}
           </div>
         );
       default:
