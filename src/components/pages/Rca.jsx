@@ -7,14 +7,13 @@ import CostCard from "../utils/CostCard";
 
 const Rca = ({ step }) => {
   const [types, setTypes] = useState([]);
-  const [checked, setChecked] = useState(0);
 
   const showStep = () => {
     switch (step) {
       case 0:
         return (
           <div className="rca_step">
-            <h1>Alege tipul autovehicului</h1>
+            <h1 className="title_insurance">Alege tipul autovehicului</h1>
             <div className="rca_step__checkbox">
               <label>Autovehiculul este înmatriculat în:</label>
               <Checkbox label="Republica Moldova" group="country" />
@@ -41,7 +40,7 @@ const Rca = ({ step }) => {
       case 2:
         return (
           <div className="rca_step">
-            <h1>Numărul de locuri</h1>
+            <h1 className="title_insurance">Numărul de locuri</h1>
             <CustomDropdown
               label="Numărul de locuri"
               placeholder="Selectează o opțiune"
@@ -68,7 +67,7 @@ const Rca = ({ step }) => {
       case 4:
         return (
           <div className="rca_step">
-            <h1>Detalii posesor</h1>
+            <h1 className="title_insurance">Detalii posesor</h1>
             <div className="rca_step__checkbox">
               <label>Sunteți pensionar sau aveți grad de invalidate?</label>
               <div>

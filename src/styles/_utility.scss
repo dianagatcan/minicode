@@ -66,3 +66,17 @@ $gradient: linear-gradient(
   background-color: $sauvignon;
   border: none;
 }
+
+@mixin paragraph($font: "PT Root light", $size: 18px) {
+  font-family: $font;
+  font-size: $size;
+  margin: 0;
+  line-height: 27px;
+}
+
+.title_insurance {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 36px;
+}

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import InsuranceDetails from "../utils/InsuranceDetails";
 
 const InsuranceForm = () => {
-  const [selectedInsurance, setSelectedInsurance] = useState("RCA");
+  const [selectedInsurance, setSelectedInsurance] = useState("Casco");
   const [first, setFirst] = useState("");
   const [second, setSecond] = useState("");
 

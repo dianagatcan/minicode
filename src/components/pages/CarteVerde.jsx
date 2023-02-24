@@ -28,7 +28,7 @@ const CarteVerde = ({ step }) => {
       case 2:
         return (
           <div className="cv_container">
-            <h1>Zona de deplasare</h1>
+            <h1 className="title_insurance">Zona de deplasare</h1>
             <div className="cv_container__zona">
               <label>Zona de deplasare</label>
               <div className="checkbox-container">

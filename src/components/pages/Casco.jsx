@@ -16,9 +16,19 @@ const Casco = ({ step }) => {
       case 1:
         return (
           <div className="step2_container">
-            <h1>Alege marca</h1>
-            <Input label="Marca" type="text" placeholder="Introduceți marca" />
-            <Input label="Model" type="text" placeholder="Introduceți model" />
+            <h1 className="title_insurance">Alege marca</h1>
+            <div className="step2_container__input">
+              <Input
+                label="Marca"
+                type="text"
+                placeholder="Introduceți marca"
+              />
+              <Input
+                label="Model"
+                type="text"
+                placeholder="Introduceți model"
+              />
+            </div>
             <div className="step2_container__year">
               <label>Anul producerii</label>
               <div className="radio_group">
@@ -36,9 +46,9 @@ const Casco = ({ step }) => {
         return (
           <div className="step3_container">
             {step === 2 ? (
-              <h1>Alege valoarea pe piață</h1>
+              <h1 className="title_insurance">Alege valoarea pe piață</h1>
             ) : (
-              <h1>Prețul final</h1>
+              <h1 className="title_insurance">Prețul final</h1>
             )}
             <Input
               label="Valoarea de piață ( € )"
@@ -47,17 +57,21 @@ const Casco = ({ step }) => {
             />
             <div className="step3_container__teritoriu">
               <label>Teritoriul de acoperire CASCO</label>
-              <div className="checkbox-container">
-                <Checkbox label="RM" group="teritoriu" />
-                <Checkbox label="RM + CSI" group="teritoriu" />
-                <Checkbox label="RM + CSI + EU + TURCIA" group="teritoriu" />
+              <div className="checkbox-container" >
+                <div>
+                  <Checkbox label="RM" group="teritoriu" />
+                  <Checkbox label="RM + CSI" group="teritoriu" />
+                  <Checkbox label="RM + CSI + EU + TURCIA" group="teritoriu" />
+                </div>
               </div>
             </div>
             <div className="step3_container__franciza">
               <label>Franciza</label>
               <div className="checkbox-container">
-                <Checkbox label="Cu aplicarea francizei" group="franciza" />
-                <Checkbox label="Fara franciza" group="franciza" />
+                <div>
+                  <Checkbox label="Cu aplicarea francizei" group="franciza" />
+                  <Checkbox label="Fara franciza" group="franciza" />
+                </div>
               </div>
             </div>
             {step === 3 ? <CostCard price="153" /> : null}
