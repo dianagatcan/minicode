@@ -3,11 +3,17 @@
 footer {
   background-color: $burgundy;
   display: flex;
-  column-gap: 7vw;
-  padding: 80px 16vw;
-  color: $white;
-  font-size: 18px;
-  line-height: 27px;
+  padding: 80px 0;
+  justify-content: center;
+
+  .footer_container {
+    color: $white;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    justify-content: space-between;
+    width: 67vw;
+  }
   p,
   li {
     font-size: 18px;
@@ -45,15 +51,11 @@ footer {
   }
   .company {
     padding-top: 60px;
-    width: 11vw;
     li {
       padding-bottom: 10px;
     }
   }
   .contacts {
-    padding-top: 60px;
-    padding-right: 59px;
-    width: 8vw;
     div {
       p {
         padding-bottom: 10px;
@@ -61,12 +63,16 @@ footer {
     }
   }
   .media {
-    width: 11vw;
-    padding-top: 60px;
     div {
       display: grid;
       grid-template-columns: 32px 32px;
       gap: 30px;
     }
+  }
+
+  .media,
+  .contacts {
+    width: 11vw;
+    padding-top: 60px;
   }
 }
