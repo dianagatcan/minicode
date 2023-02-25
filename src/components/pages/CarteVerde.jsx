@@ -47,7 +47,7 @@ const CarteVerde = ({ step }) => {
               <label>Valabilitatea poliței</label>
               <div className="radio_group">
                 {validation.map((period, index) => (
-                  <RadioCheck index={index} unit={period} />
+                  <RadioCheck key={index} index={index} unit={period} />
                 ))}
               </div>
             </div>

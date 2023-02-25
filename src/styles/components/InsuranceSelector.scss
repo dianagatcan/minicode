@@ -18,7 +18,7 @@
   .insurance_button {
     @include colored-button();
     border: 1px solid $sauvignon;
-    padding: 8px 30px;
+    padding: 0px 30px;
   }
   .button-others {
     @include text-button($color: $white);

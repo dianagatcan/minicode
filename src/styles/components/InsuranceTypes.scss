@@ -1,16 +1,25 @@
 @import "../utility";
 
-.form-container {
-  &__buttons {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    button {
-      @include colored-button;
-    }
-  }
-}
-
 .left-insurance {
   flex: 1 1 0;
+
+  .form-container {
+    &__buttons {
+      flex: 1 1 0;
+      // align-items: flex-end;
+      // align-content: flex-end;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        @include colored-button($background: $burgundy);
+      }
+      button:first-of-type {
+        background-color: $white;
+      }
+      button.disabled {
+        pointer-events: none;
+      }
+    }
+  }
 }

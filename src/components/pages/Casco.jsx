@@ -34,7 +34,7 @@ const Casco = ({ step }) => {
               <div className="radio_group">
                 {Array.from({ length: 12 }, (_, i) => 2010 + i).map(
                   (year, index) => (
-                    <RadioCheck index={index} unit={year} />
+                    <RadioCheck key={index} index={index} unit={year} />
                   )
                 )}
               </div>
@@ -57,7 +57,7 @@ const Casco = ({ step }) => {
             />
             <div className="step3_container__teritoriu">
               <label>Teritoriul de acoperire CASCO</label>
-              <div className="checkbox-container" >
+              <div className="checkbox-container">
                 <div>
                   <Checkbox label="RM" group="teritoriu" />
                   <Checkbox label="RM + CSI" group="teritoriu" />

@@ -1,4 +1,9 @@
+@import "../utility";
+
 .bar {
-  min-width: 100px;
-  background-color: aqua;
+  min-width: 99px;
+  border-left: 1px solid $sauvignon;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

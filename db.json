@@ -36,71 +36,71 @@
   "vehicles": [
     {
       "name": "bike",
-      "path": "assets/icons/bike.png",
+      "path": "assets/icons/bike.svg",
       "CVdescription": "Motocicleta B",
       "RCAdescription": "Motociclete",
       "groups": ["Carte Verde", "RCA"]
     },
     {
       "name": "car",
-      "path": "assets/icons/car.png",
+      "path": "assets/icons/car.svg",
       "description": "Autoturism cu până la 9 locuri",
       "CVdescription": "Autoturism A",
       "groups": ["Carte Verde", "Casco", "RCA"]
     },
     {
       "name": "minitruck",
-      "path": "assets/icons/minitruck.png",
+      "path": "assets/icons/minitruck.svg",
       "description": "Camion până la 3,5 tone",
       "groups": ["Carte Verde", "Casco"]
     },
     {
       "name": "truck",
-      "path": "assets/icons/truck.png",
+      "path": "assets/icons/truck.svg",
       "description": "Camion mai mult de 3,5 tone",
       "RCAdescription": "Camioane și alte autovehicule a căror m...",
       "groups": ["Carte Verde", "Casco", "RCA"]
     },
     {
       "name": "minibus",
-      "path": "assets/icons/minibus.png",
+      "path": "assets/icons/minibus.svg",
       "description": "Microbus până la 20 locuri",
       "groups": ["Carte Verde", "Casco"]
     },
     {
       "name": "bus",
-      "path": "assets/icons/bus.png",
+      "path": "assets/icons/bus.svg",
       "description": "Autobuz peste 20 locuri",
       "RCAdescription": "Autovehicule destinate transportului de pers...",
       "groups": ["Carte Verde", "Casco", "RCA"]
     },
     {
       "name": "trailer",
-      "path": "assets/icons/trailer.png",
+      "path": "assets/icons/trailer.svg",
       "description": "Remorci, semiremorci",
       "groups": ["Casco"]
     },
     {
       "name": "refrigerant",
-      "path": "assets/icons/refrigerant.png",
+      "path": "assets/icons/refrigerant.svg",
       "description": "Refrigeratoare, cisterne",
       "groups": ["Casco"]
     },
     {
       "name": "technique",
-      "path": "assets/icons/technique.png",
+      "path": "assets/icons/technique.svg",
       "description": "Tehnică specială",
       "groups": ["Casco"]
     },
     {
       "name": "other-technique",
-      "path": "assets/icons/other-technique.png",
+      "path": "assets/icons/other-technique.svg",
       "description": "Echipament suplimentar",
       "groups": ["Casco"]
     },
     {
       "name": "tractor",
-      "path": "assets/icons/tractor.png",
+      "path": "assets/icons/tractor.svg",
       "description": "Tractoare rutiere având puterea motorului",
       "groups": ["RCA"]
     }
@@ -140,6 +140,80 @@
       "insuranceType": "Casco",
       "first": "Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.\n\nEchipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare.\n\nConducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.",
       "second": "- \"DAUNE\" - prejudiciile materiale cauzate Asiguratului prin deteriorarea sau distrugerea autovehiculului şi a echipamentului suplimentar ca urmare a:\na. tamponării, lovirii sau ciocnirii cu un alt autovehicul, obiect; trecerii peste orice fel de obiecte statice sau în mişcare; căderii; căderii pe autovehicul a unor obiecte străine; derapării; răsturnării; alunecării;\n\nb. incendiului, descărcării electrice, exploziei, ploii torenţiale, grindinei, inundaţiei, uraganului, cutremurului de pămînt, surpărilor, alunecărilor de teren, căderilor abundente de zăpadă, avalanşelor, inclusiv acţiunea directă sau indirectă a acestora;\n\n- „FURT” – furtul, jaful, tîlhăria, răpirea autovehicului, a părţilor componente sau pieselor acestuia; orice daune cauzate ca urmare a furtului, jafului, tîlhăriei, răpirei sau tentativei de furt, jaf, tîlharie, răpire a autovehicului, a părţilor lui componente şi a pieselor, echipamentului primit în asigurare, precum şi a echipamentului suplimentar şi accesoriilor dacă acestea sunt asigurate conform contractului de asigurare.\n\n-„ACCIDENT” – cauzarea leziunilor corporale sau decesul conducătorului auto/pasagerilor ca rezultat al unui accident rutier.\n\n\"AUTOCASCO\" - pachetul complet de riscuri, compus din grupurile de risc \"DAUNĂ\" şi \"FURT\", care poate include suplimentar riscul \"ACCIDENT\"."
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Vasile Moraru",
+      "comment": "Am fost implicat recent intr-un accident rutier. Am fost despagubit in timp. Personal foarte amabil. Recomand cu incredere!",
+      "foto": "assets/photos/VMoraru",
+      "stars": 4
+    },
+    {
+      "name": "Vasile Moraru",
+      "comment": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "foto": "assets/photos/VMoraru2",
+      "stars": 4
+    },
+    {
+      "name": "Valeria Ivanov",
+      "comment": "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
+      "foto": "assets/photos/VIvanov",
+      "stars": 5
+    },
+    {
+      "name": "Vasile Moraru",
+      "comment": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
+      "foto": "assets/photos/VMoraru3",
+      "stars": 4
+    },
+    {
+      "name": "Ronald Richards",
+      "comment": "Am fost implicat recent intr-un accident rutier. Am fost despagubit in timp. Personal foarte amabil. Recomand cu incredere!",
+      "foto": "assets/photos/RRichards",
+      "stars": 4
+    },
+    {
+      "name": "Annette Black",
+      "comment": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "foto": "assets/photos/ABlack",
+      "stars": 5
+    },
+    {
+      "name": "Floyd Miles",
+      "comment": "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
+      "foto": "assets/photos/FMiles",
+      "stars": 4
+    },
+    {
+      "name": "Ralph Edwards",
+      "comment": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
+      "foto": "assets/photos/REdwards",
+      "stars": 4
+    },
+    {
+      "name": "Cody Fisher",
+      "comment": "Am fost implicat recent intr-un accident rutier. Am fost despagubit in timp. Personal foarte amabil. Recomand cu incredere!",
+      "foto": "assets/photos/CFisher",
+      "stars": 4
+    },
+    {
+      "name": "Theresa Webb",
+      "comment": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "foto": "assets/photos/TWebb",
+      "stars": 5
+    },
+    {
+      "name": "Darlene Robertson",
+      "comment": "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
+      "foto": "assets/photos/DRobertson",
+      "stars": 4
+    },
+    {
+      "name": "Albert Flores",
+      "comment": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
+      "foto": "assets/photos/AFlores",
+      "stars": 4
     }
   ]
 }

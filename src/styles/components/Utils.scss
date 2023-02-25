@@ -83,7 +83,12 @@
     border-radius: 7px;
     padding: 9px 15px;
     border: 1px solid $sauvignon;
+    outline: none;
     color: $dark-gray;
+    cursor: pointer;
+    &:focus {
+      border: 1px solid $burgundy-hover;
+    }
   }
 }
 

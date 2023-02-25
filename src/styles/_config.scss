@@ -44,3 +44,11 @@ h2 {
 button {
   padding: 0;
 }
+
+details summary {
+  cursor: pointer;
+}
+
+details summary > * {
+  display: inline;
+}

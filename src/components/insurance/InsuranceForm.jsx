@@ -16,8 +16,10 @@ const InsuranceForm = () => {
         const details = data.find(
           (media) => media.insuranceType === selectedInsurance
         );
-        setFirst(details.first);
-        setSecond(details.second);
+        if (details) {
+          setFirst(details.first);
+          setSecond(details.second);
+        }
       });
   }, [selectedInsurance]);
 
