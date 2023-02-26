@@ -2,6 +2,7 @@
 
 .left-insurance {
   flex: 1 1 0;
+  max-width: 33.3vw;
 
   .form-container {
     &__buttons {
@@ -13,9 +14,35 @@
 
       button {
         @include colored-button($background: $burgundy);
+        color: $white;
+        padding: 8px 1.4vw;
+        display: flex;
+        column-gap: 15px;
+        font-family: "PT Root regular";
+        align-items: center;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        border: 1px solid $burgundy;
+        &:hover {
+          background-color: $burgundy-hover;
+        }
       }
       button:first-of-type {
         background-color: $white;
+        color: $black;
+        div {
+          align-items: center;
+          display: flex;
+        }
+
+        &:hover {
+          background-color: $burgundy;
+          color: $white;
+        }
+      }
+      button:first-of-type:hover path {
+        fill: $white;
       }
       button.disabled {
         pointer-events: none;

@@ -2,7 +2,9 @@ import Rca from "../pages/Rca";
 import CarteVerde from "../pages/CarteVerde";
 import Casco from "../pages/Casco";
 import "../../styles/components/InsuranceTypes.scss";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Media from "./Media";
+import { ReactSVG } from "react-svg";
 
 const InsuranceTypes = ({ selectedInsurance }) => {
   const insuranceSteps = [
@@ -20,12 +22,32 @@ const InsuranceTypes = ({ selectedInsurance }) => {
     },
   ];
   const [step, setStep] = useState(0);
+  const [arrow, setArrow] = useState("");
 
   const getMaxSteps = () => {
     const maxStep = insuranceSteps.find(
       (insurance) => insurance.insuranceType === selectedInsurance
     );
     return maxStep ? maxStep.steps : null;
+  };
+
+  useEffect(() => {
+    fetch(`http://127.0.0.1:3001/icons`)
+      .then((response) => response.json())
+      .then((data) => {
+        const back = data.find((icon) => icon.name === "arrow-back");
+        setArrow(back);
+      });
+  }, []);
+
+  useEffect(() => {
+    setStep(0);
+  }, [selectedInsurance]);
+
+  const getArrow = () => {
+    if (step < getMaxSteps() - 2) {
+      return <Media name="arrow-forward" />;
+    }
   };
 
   const getButtonText = () => {
@@ -64,6 +86,7 @@ const InsuranceTypes = ({ selectedInsurance }) => {
               setStep(step - 1);
             }}
           >
+            <ReactSVG src={arrow.path} wrapper="div" />
             Înapoi
           </button>
           <button
@@ -73,6 +96,7 @@ const InsuranceTypes = ({ selectedInsurance }) => {
             }}
           >
             {getButtonText()}
+            {getArrow()}
           </button>
         </div>
       )}

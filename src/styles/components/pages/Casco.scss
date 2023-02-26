@@ -5,10 +5,14 @@
   font-size: 18px;
 }
 
+.left-insurance .radio_group label {
+  font-family: "Arial";
+  font-size: 14px;
+}
+
 .step2_container {
   display: flex;
   flex-direction: column;
-  padding-right: 37px;
   row-gap: 30px;
   &__input {
     display: flex;
@@ -20,7 +24,8 @@
     .radio_group {
       padding-top: 20px;
       display: flex;
-      column-gap: 20px;
+      column-gap: 1.05vw;
+      // 20px;
     }
   }
 }
@@ -29,7 +34,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  padding-right: 37px;
   &__teritoriu,
   &__franciza {
     display: flex;

@@ -31,7 +31,9 @@
     { "name": "close-log", "path": "assets/icons/close-log.png" },
     { "name": "close-details", "path": "assets/icons/close-details.png" },
     { "name": "plus", "path": "assets/icons/plus.png" },
-    { "name": "delivery", "path": "assets/icons/delivery.png" }
+    { "name": "delivery", "path": "assets/icons/delivery.png" },
+    { "name": "arrow-back", "path": "assets/icons/arrow-back.svg" },
+    { "name": "arrow-forward", "path": "assets/icons/arrow-forward.png" }
   ],
   "vehicles": [
     {

@@ -18,11 +18,10 @@
       font-weight: 700;
       align-self: flex-end;
       padding: 9px 72px;
-      border: 2px solid $burgundy;
+      border: 1px solid $burgundy;
       &:hover {
-        border: 2px solid $burgundy;
-        color: $black;
         background-color: $white;
+        color: $black;
       }
     }
   }

@@ -24,7 +24,9 @@ const InsuranceForm = () => {
   }, [selectedInsurance]);
 
   const changeInsurance = (event) => {
-    setSelectedInsurance(event.target.innerText);
+    if (event.target.innerText) {
+      setSelectedInsurance(event.target.innerText);
+    }
   };
 
   return (
