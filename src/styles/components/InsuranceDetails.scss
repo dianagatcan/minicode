@@ -19,8 +19,12 @@
     display: flex;
     flex-direction: column;
   }
+  details:last-of-type {
+    overflow: auto;
+  }
   .summary_details {
     p {
+      white-space: pre-wrap;
       font-family: "PT Root regular";
       font-size: 14px;
       line-height: 21px;
@@ -29,6 +33,7 @@
       margin: 0;
     }
     hr {
+      border-width: 0px;
       height: 1px;
       background: #a40731;
       opacity: 0.1;
