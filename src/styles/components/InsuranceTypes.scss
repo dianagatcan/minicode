@@ -3,14 +3,15 @@
 .left-insurance {
   flex: 1 1 0;
   max-width: 33.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .form-container {
     &__buttons {
-      flex: 1 1 0;
-      // align-items: flex-end;
-      // align-content: flex-end;
       display: flex;
       justify-content: space-between;
+      height: 45px;
 
       button {
         @include colored-button($background: $burgundy);
