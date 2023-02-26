@@ -22,7 +22,7 @@ const InsuranceTypes = ({ selectedInsurance }) => {
     },
   ];
   const [step, setStep] = useState(0);
-  const [arrow, setArrow] = useState("");
+  const [arrows, setArrows] = useState([]);
 
   const getMaxSteps = () => {
     const maxStep = insuranceSteps.find(
@@ -35,8 +35,10 @@ const InsuranceTypes = ({ selectedInsurance }) => {
     fetch(`http://127.0.0.1:3001/icons`)
       .then((response) => response.json())
       .then((data) => {
-        const back = data.find((icon) => icon.name === "arrow-back");
-        setArrow(back);
+        const back = data.filter((icon) =>
+          ["arrow-back", "arrow-forward"].includes(icon.name)
+        );
+        setArrows(back);
       });
   }, []);
 
@@ -45,9 +47,10 @@ const InsuranceTypes = ({ selectedInsurance }) => {
   }, [selectedInsurance]);
 
   const getArrow = () => {
-    if (step < getMaxSteps() - 2) {
-      return <Media name="arrow-forward" />;
+    if (step < getMaxSteps() - 2 && arrows[1]) {
+      return <ReactSVG src={arrows[1].path} />;
     }
+    <Media name="arrow-forward" />;
   };
 
   const getButtonText = () => {
@@ -86,7 +89,7 @@ const InsuranceTypes = ({ selectedInsurance }) => {
               setStep(step - 1);
             }}
           >
-            <ReactSVG src={arrow.path} wrapper="div" />
+            {arrows[0] && <ReactSVG src={arrows[0].path} wrapper="div" />}
             Înapoi
           </button>
           <button

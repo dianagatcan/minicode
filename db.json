@@ -33,7 +33,7 @@
     { "name": "plus", "path": "assets/icons/plus.png" },
     { "name": "delivery", "path": "assets/icons/delivery.png" },
     { "name": "arrow-back", "path": "assets/icons/arrow-back.svg" },
-    { "name": "arrow-forward", "path": "assets/icons/arrow-forward.png" }
+    { "name": "arrow-forward", "path": "assets/icons/arrow-forward.svg" }
   ],
   "vehicles": [
     {

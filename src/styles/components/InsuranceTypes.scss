@@ -24,8 +24,16 @@
         font-size: 18px;
         line-height: 27px;
         border: 1px solid $burgundy;
+        div {
+          display: flex;
+          align-items: center;
+        }
         &:hover {
-          background-color: $burgundy-hover;
+          background-color: $white;
+          color: $black;
+        }
+        &:hover path {
+          fill: $black;
         }
       }
       button:first-of-type {
