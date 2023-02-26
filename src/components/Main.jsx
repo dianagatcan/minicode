@@ -46,7 +46,11 @@ const Main = () => {
         handleSelectedInsurance={handleSelectedInsurance}
         selectedInsurance={selectedInsurance}
       />
-      <ProgressBar step={step} insuranceSteps={insuranceSteps} />
+      <ProgressBar
+        selectedInsurance={selectedInsurance}
+        step={step}
+        insuranceSteps={insuranceSteps}
+      />
     </section>
   );
 };
