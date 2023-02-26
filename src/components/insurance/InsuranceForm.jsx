@@ -4,9 +4,15 @@ import InsuranceTypes from "../utils/InsuranceTypes";
 import { useEffect, useState } from "react";
 import InsuranceDetails from "../utils/InsuranceDetails";
 
-const InsuranceForm = () => {
-  const [selectedInsurance, setSelectedInsurance] = useState("Casco");
+const InsuranceForm = ({
+  step,
+  insuranceSteps,
+  handleClick,
+  selectedInsurance,
+  handleSelectedInsurance,
+}) => {
   const [first, setFirst] = useState("");
+
   const [second, setSecond] = useState("");
 
   useEffect(() => {
@@ -25,7 +31,7 @@ const InsuranceForm = () => {
 
   const changeInsurance = (event) => {
     if (event.target.innerText) {
-      setSelectedInsurance(event.target.innerText);
+      handleSelectedInsurance(event.target.innerText);
     }
   };
 
@@ -33,7 +39,12 @@ const InsuranceForm = () => {
     <section className="form-container">
       <InsuranceSelector changeInsurance={changeInsurance} />
       <div className="form-container__form">
-        <InsuranceTypes selectedInsurance={selectedInsurance} />
+        <InsuranceTypes
+          selectedInsurance={selectedInsurance}
+          step={step}
+          insuranceSteps={insuranceSteps}
+          handleClick={handleClick}
+        />
         <InsuranceDetails first={first} second={second} />
       </div>
     </section>

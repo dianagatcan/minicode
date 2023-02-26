@@ -6,22 +6,12 @@ import React, { useEffect, useState } from "react";
 import Media from "./Media";
 import { ReactSVG } from "react-svg";
 
-const InsuranceTypes = ({ selectedInsurance }) => {
-  const insuranceSteps = [
-    {
-      insuranceType: "Casco",
-      steps: 4,
-    },
-    {
-      insuranceType: "Carte verde",
-      steps: 3,
-    },
-    {
-      insuranceType: "RCA",
-      steps: 5,
-    },
-  ];
-  const [step, setStep] = useState(0);
+const InsuranceTypes = ({
+  selectedInsurance,
+  step,
+  insuranceSteps,
+  handleClick,
+}) => {
   const [arrows, setArrows] = useState([]);
 
   const getMaxSteps = () => {
@@ -43,7 +33,7 @@ const InsuranceTypes = ({ selectedInsurance }) => {
   }, []);
 
   useEffect(() => {
-    setStep(0);
+    handleClick('reset')
   }, [selectedInsurance]);
 
   const getArrow = () => {
@@ -86,7 +76,7 @@ const InsuranceTypes = ({ selectedInsurance }) => {
           <button
             className={step === 0 ? "disabled" : ""}
             onClick={() => {
-              setStep(step - 1);
+              handleClick("back");
             }}
           >
             {arrows[0] && <ReactSVG src={arrows[0].path} wrapper="div" />}
@@ -95,7 +85,7 @@ const InsuranceTypes = ({ selectedInsurance }) => {
           <button
             className={step === getMaxSteps() - 1 ? "disabled" : ""}
             onClick={() => {
-              setStep(step + 1);
+              handleClick("forward");
             }}
           >
             {getButtonText()}
