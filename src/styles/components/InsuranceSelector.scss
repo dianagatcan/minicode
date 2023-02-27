@@ -22,8 +22,15 @@
   }
   .button-others {
     @include text-button($color: $white);
+    div {
+      display: flex;
+      align-items: center;
+    }
     &:hover {
       color: $danger;
+    }
+    &:hover path {
+      fill: $danger;
     }
   }
   .active {

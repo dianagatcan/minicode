@@ -1,10 +1,21 @@
-import Media from "../utils/Media";
 import "../../styles/components/InsuranceSelector.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { ReactSVG } from "react-svg";
 
 const InsuranceSelector = ({ changeInsurance }) => {
   const [moved, setMoved] = useState(false);
   const [active, setActive] = useState(2);
+
+  const [arrow, setArrow] = useState({});
+
+  useEffect(() => {
+    fetch(`http://127.0.0.1:3001/icons`)
+      .then((response) => response.json())
+      .then((data) => {
+        const arr = data.find((icon) => icon.name === "arrow-forward");
+        setArrow(arr);
+      });
+  }, []);
 
   const insuranceTypes = [
     "Carte verde",
@@ -64,7 +75,7 @@ const InsuranceSelector = ({ changeInsurance }) => {
           className="button-others"
         >
           Altele
-          <Media name="arrow-right" />
+          {arrow && <ReactSVG src={arrow.path} wrapper="div" />}
         </button>
       </div>
     </div>
