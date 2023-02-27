@@ -32,6 +32,9 @@
   &__reviews {
     padding: 80px 16vw;
     background-color: $gray;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
   }
 }
 
@@ -84,6 +87,29 @@
 .news__content {
   display: flex;
   gap: 20px;
+}
+
+.slick-slide > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.dots {
+  width: 100%;
+  text-align: center;
+}
+.line {
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: $sauvignon;
+  cursor: pointer;
+}
+
+li.slick-active .line {
+  width: 40px;
+  background-color: $burgundy;
 }
 
 @media only screen and (max-width: 1200px) {

@@ -34,7 +34,9 @@
     { "name": "delivery", "path": "assets/icons/delivery.png" },
     { "name": "arrow-back", "path": "assets/icons/arrow-back.svg" },
     { "name": "arrow-forward", "path": "assets/icons/arrow-forward.svg" },
-    { "name": "previous", "path": "assets/icons/previous.png" }
+    { "name": "previous", "path": "assets/icons/previous.png" },
+    { "name": "star-filled", "path": "assets/icons/star-filled.png" },
+    { "name": "star-empty", "path": "assets/icons/star-empty.png" }
   ],
   "vehicles": [
     {
@@ -149,73 +151,74 @@
     {
       "name": "Vasile Moraru",
       "comment": "Am fost implicat recent intr-un accident rutier. Am fost despagubit in timp. Personal foarte amabil. Recomand cu incredere!",
-      "foto": "assets/photos/VMoraru",
+      "foto": "assets/photos/VMoraru.png",
       "stars": 4
     },
     {
       "name": "Vasile Moraru",
       "comment": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "foto": "assets/photos/VMoraru2",
+      "foto": "assets/photos/VMoraru2.png",
       "stars": 4
     },
     {
       "name": "Valeria Ivanov",
       "comment": "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
-      "foto": "assets/photos/VIvanov",
+      "foto": "assets/photos/VIvanov.png",
       "stars": 5
     },
     {
       "name": "Vasile Moraru",
       "comment": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
-      "foto": "assets/photos/VMoraru3",
+      "foto": "assets/photos/VMoraru3.png",
       "stars": 4
     },
+
     {
       "name": "Ronald Richards",
       "comment": "Am fost implicat recent intr-un accident rutier. Am fost despagubit in timp. Personal foarte amabil. Recomand cu incredere!",
-      "foto": "assets/photos/RRichards",
+      "foto": "assets/photos/RRichards.png",
       "stars": 4
     },
     {
       "name": "Annette Black",
       "comment": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "foto": "assets/photos/ABlack",
+      "foto": "assets/photos/ABlack.png",
       "stars": 5
     },
     {
       "name": "Floyd Miles",
       "comment": "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
-      "foto": "assets/photos/FMiles",
+      "foto": "assets/photos/FMiles.png",
       "stars": 4
     },
     {
       "name": "Ralph Edwards",
       "comment": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
-      "foto": "assets/photos/REdwards",
+      "foto": "assets/photos/REdwards.png",
       "stars": 4
     },
     {
       "name": "Cody Fisher",
       "comment": "Am fost implicat recent intr-un accident rutier. Am fost despagubit in timp. Personal foarte amabil. Recomand cu incredere!",
-      "foto": "assets/photos/CFisher",
+      "foto": "assets/photos/CFisher.png",
       "stars": 4
     },
     {
       "name": "Theresa Webb",
       "comment": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "foto": "assets/photos/TWebb",
+      "foto": "assets/photos/TWebb.png",
       "stars": 5
     },
     {
       "name": "Darlene Robertson",
       "comment": "consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue",
-      "foto": "assets/photos/DRobertson",
+      "foto": "assets/photos/DRobertson.png",
       "stars": 4
     },
     {
       "name": "Albert Flores",
       "comment": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
-      "foto": "assets/photos/AFlores",
+      "foto": "assets/photos/AFlores.png",
       "stars": 4
     }
   ]

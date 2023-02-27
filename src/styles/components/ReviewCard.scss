@@ -1,0 +1,38 @@
+@import "../utility";
+
+.review {
+  display: flex;
+  padding: 25px;
+  background-color: $white;
+  column-gap: 20px;
+  color: $dark-gray;
+  width: 30vw;
+
+  &__foto {
+    width: 100px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  &__name {
+    font-family: "PT Root medium";
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+  }
+  &__stars {
+    display: flex;
+    column-gap: 10px;
+  }
+  &__comment {
+    font-family: "PT Root light";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    p {
+      margin: 0;
+    }
+  }
+}
