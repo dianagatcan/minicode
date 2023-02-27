@@ -49,7 +49,7 @@ const InsuranceSelector = ({ changeInsurance }) => {
       <h1>Alege tipul de asigurare</h1>
       <div className="button_container">
         <div className="overflow">
-          <div className={`button_container eased`}>
+          <div className="button_container eased">
             {insuranceTypes.map((insurance, index) => (
               <button
                 data={insurance}

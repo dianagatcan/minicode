@@ -16,9 +16,10 @@
   display: flex;
   column-gap: 28px;
   .insurance_button {
+    white-space: nowrap;
     @include colored-button();
     border: 1px solid $sauvignon;
-    padding: 0px 30px;
+    padding: 9px 30px;
   }
   .button-others {
     @include text-button($color: $white);

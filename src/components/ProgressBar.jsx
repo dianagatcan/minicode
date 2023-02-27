@@ -6,11 +6,12 @@ const ProgressBar = ({ step, insuranceSteps, selectedInsurance }) => {
   const [circles, setCircles] = useState(0);
 
   useEffect(() => {
-    setCircles(
-      insuranceSteps.find(
-        ({ insuranceType }) => insuranceType === selectedInsurance
-      ).steps
+    const nrOfCircles = insuranceSteps.find(
+      ({ insuranceType }) => insuranceType === selectedInsurance
     );
+    if (nrOfCircles) {
+      setCircles(nrOfCircles.steps);
+    }
   }, [selectedInsurance]);
 
   return (
