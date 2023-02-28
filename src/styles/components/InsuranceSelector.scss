@@ -54,6 +54,7 @@
     content: attr(data);
     background: $gradient;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     transition: 200ms;
   }
