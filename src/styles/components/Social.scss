@@ -57,9 +57,15 @@
       &:focus {
         border: 1px solid $burgundy-hover;
       }
+      &:hover {
+        border: 1px solid $burgundy-hover;
+      }
     }
     input::placeholder {
       color: $dark-gray;
+    }
+    input:hover::placeholder {
+      color: $burgundy-hover;
     }
   }
   &__details {

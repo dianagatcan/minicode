@@ -1,5 +1,15 @@
 @import "../../utility";
 
+input {
+  &:hover {
+    border: 1px solid $burgundy-hover;
+  }
+}
+
+input:hover::placeholder {
+  color: $burgundy-hover;
+}
+
 .left-insurance label {
   font-family: "Arial";
   font-size: 18px;
@@ -49,6 +59,3 @@
     color: $dark-gray;
   }
 }
-
-
-

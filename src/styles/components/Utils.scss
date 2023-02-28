@@ -120,4 +120,16 @@
   .Dropdown-option:hover {
     background-color: $white;
   }
+  .Dropdown-control {
+    cursor: pointer;
+    &:hover {
+      border: 1px solid $burgundy-hover;
+    }
+  }
+  .Dropdown-placeholder {
+
+    &:hover {
+      color: $burgundy-hover;
+    }
+  }
 }
