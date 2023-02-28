@@ -83,7 +83,7 @@ const Casco = ({ step }) => {
   };
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:3001/vehicles`)
+    fetch(`http://localhost:3001/vehicles`)
       .then((response) => response.json())
       .then((data) => {
         const cascoData = data.filter((vehicle) =>

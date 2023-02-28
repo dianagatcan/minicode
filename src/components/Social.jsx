@@ -51,13 +51,13 @@ const Social = () => {
   };
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:3001/reviews`)
+    fetch(`http://localhost:3001/reviews`)
       .then((response) => response.json())
       .then((data) => setReviews(data));
   }, []);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:3001/icons`)
+    fetch(`http://localhost:3001/icons`)
       .then((response) => response.json())
       .then((data) => {
         const arr = data.find((icon) => icon.name === "arrow");

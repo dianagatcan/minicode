@@ -6,7 +6,7 @@ const NewsCard = ({ name, path, description, title }) => {
   const [arrow, setArrow] = useState({});
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:3001/icons`)
+    fetch(`http://localhost:3001/icons`)
       .then((response) => response.json())
       .then((data) => {
         const arr = data.find((icon) => icon.name === "arrow");

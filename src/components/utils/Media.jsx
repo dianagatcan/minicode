@@ -4,7 +4,7 @@ const Media = ({ name, cn, onClick }) => {
   const [media, setMedia] = useState({});
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:3001/icons`)
+    fetch(`http://localhost:3001/icons`)
       .then((response) => response.json())
       .then((data) => {
         const media = data.find((media) => media.name === name);

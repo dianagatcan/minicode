@@ -16,7 +16,7 @@ const InsuranceForm = ({
   const [second, setSecond] = useState("");
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:3001/insuranceDetails`)
+    fetch(`http://localhost:3001/insuranceDetails`)
       .then((response) => response.json())
       .then((data) => {
         const details = data.find(

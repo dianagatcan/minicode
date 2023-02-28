@@ -5,7 +5,7 @@ const News = () => {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:3001/news`)
+    fetch(`http://localhost:3001/news`)
       .then((response) => response.json())
       .then((data) => {
         setNews(data);
