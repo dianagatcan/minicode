@@ -65,14 +65,14 @@ const Menu = ({ onClick }) => {
           <div className="menu__lang">
             <Media name="lang" />
             <p
-              className={`${lang == "Рус" ? "selected" : ""}`}
+              className={`${lang === "Рус" ? "selected" : ""}`}
               onClick={() => changeLang("Рус")}
             >
               Рус
             </p>
             <hr></hr>
             <p
-              className={`${lang == "Ro" ? "selected" : ""}`}
+              className={`${lang === "Ro" ? "selected" : ""}`}
               onClick={() => changeLang("Ro")}
             >
               Ro
@@ -86,7 +86,7 @@ const Menu = ({ onClick }) => {
               </li>
               <li>
                 <Media name="mail" />
-                <a href="maito:office@minicode.md">office@minicode.md</a>
+                <a href="mailto:office@minicode.md">office@minicode.md</a>
               </li>
               <li>
                 <Media name="home" /> mun. Chișinău, str București, 101
