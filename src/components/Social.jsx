@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import "../styles/components/Social.scss";
-import Media from "./utils/Media";
 import News from "./utils/News";
 import ReviewCard from "./utils/ReviewCard";
 import Slider from "react-slick";
+import { ReactSVG } from "react-svg";
 
 const Social = () => {
   const [phoneValue, setPhoneValue] = useState("");
   const [reviews, setReviews] = useState([]);
+  const [arrow, setArrow] = useState({});
   const maskPhoneValue = (value) => {
     const prefix = "+373 ";
     if (value.length < prefix.length && value.length !== 1) {
@@ -55,6 +56,15 @@ const Social = () => {
       .then((data) => setReviews(data));
   }, []);
 
+  useEffect(() => {
+    fetch(`http://127.0.0.1:3001/icons`)
+      .then((response) => response.json())
+      .then((data) => {
+        const arr = data.find((icon) => icon.name === "arrow");
+        setArrow(arr);
+      });
+  }, []);
+
   return (
     <section className="social">
       <div className="social__form">
@@ -86,7 +96,7 @@ const Social = () => {
           <h2>Oferte</h2>
           <button>
             Vezi toate ofertele
-            <Media name="arrow-right-b" />
+            <ReactSVG src={arrow.path} wrapper="div" />
           </button>
         </div>
         <div className="news__content">

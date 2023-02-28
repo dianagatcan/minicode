@@ -36,7 +36,8 @@
     { "name": "arrow-forward", "path": "assets/icons/arrow-forward.svg" },
     { "name": "previous", "path": "assets/icons/previous.png" },
     { "name": "star-filled", "path": "assets/icons/star-filled.png" },
-    { "name": "star-empty", "path": "assets/icons/star-empty.png" }
+    { "name": "star-empty", "path": "assets/icons/star-empty.png" },
+    { "name": "arrow", "path": "assets/icons/arrow.svg" }
   ],
   "vehicles": [
     {
