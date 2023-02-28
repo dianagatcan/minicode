@@ -40,6 +40,13 @@
   &__lang {
     display: flex;
     column-gap: 8px;
+    .selected {
+      color: $burgundy;
+      font-weight: 800;
+    }
+    p {
+      cursor: pointer;
+    }
     hr {
       @include vertical-line;
       height: 21px;

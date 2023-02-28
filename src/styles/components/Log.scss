@@ -125,6 +125,11 @@
       border: 1px solid $sauvignon;
       font-family: "PT Root light";
       font-size: 18px;
+      outline: none;
+      &:hover,
+      &:focus {
+        border: 1px solid $burgundy-hover;
+      }
     }
   }
 }

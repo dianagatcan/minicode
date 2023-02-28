@@ -1,7 +1,7 @@
 import "../../styles/components/Log.scss";
 import Media from "./Media";
 
-const Log = ({ onClick, selectedLog }) => {
+const Log = ({ onClick, selectedLog, changeLog }) => {
   return (
     <div className="close">
       <div className="log">
@@ -16,11 +16,11 @@ const Log = ({ onClick, selectedLog }) => {
         <div className="log__subtitle">
           {selectedLog === "Înregistrare" ? (
             <p className="log__subtitle">
-              Deja ai un cont? <span>Loghează-te</span>
+              Deja ai un cont? <span onClick={changeLog}>Loghează-te</span>
             </p>
           ) : (
             <p className="log__subtitle">
-              Nu ai cont? <span>Înregistrează-te</span>
+              Nu ai cont? <span onClick={changeLog}>Înregistrează-te</span>
             </p>
           )}
         </div>

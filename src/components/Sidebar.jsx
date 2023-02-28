@@ -1,15 +1,36 @@
+import { useState } from "react";
 import "../styles/components/Sidebar.scss";
 import Media from "./utils/Media";
 
 const Sidebar = () => {
+  const [lang, setLang] = useState("Рус");
+
+  const changeLang = (lang) => {
+    if (lang === "Рус") {
+      setLang("Рус");
+    }
+    if (lang === "Eng") {
+      setLang("Eng");
+    }
+  };
   return (
     <section className="sidebar">
       <div className="sidebar__item">
         <Media name="lang" />
         <div className="sidebar__lang">
-          <p>Рус</p>
+          <p
+            className={`${lang == "Рус" ? "selected" : ""}`}
+            onClick={() => changeLang("Рус")}
+          >
+            Рус
+          </p>
           <hr></hr>
-          <p>Eng</p>
+          <p
+            className={`${lang == "Eng" ? "selected" : ""}`}
+            onClick={() => changeLang("Eng")}
+          >
+            Eng
+          </p>
         </div>
       </div>
       <hr></hr>

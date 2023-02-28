@@ -16,6 +16,14 @@ const Navbar = () => {
     }
   };
 
+  const changeLog = () => {
+    if (selectedLog === "Logare") {
+      setSelectedLog("Înregistrare");
+    } else if (selectedLog === "Înregistrare") {
+      setSelectedLog("Logare");
+    }
+  };
+
   const clearSelectedLog = () => {
     setSelectedLog("");
   };
@@ -40,7 +48,11 @@ const Navbar = () => {
       </div>
       <div className="nav__reg">
         {selectedLog ? (
-          <Log onClick={clearSelectedLog} selectedLog={selectedLog} />
+          <Log
+            changeLog={changeLog}
+            onClick={clearSelectedLog}
+            selectedLog={selectedLog}
+          />
         ) : null}
         <div
           data-popup="Logare"
@@ -51,7 +63,11 @@ const Navbar = () => {
           <p className="nav_p">Logare</p>
         </div>
         {selectedLog ? (
-          <Log onClick={clearSelectedLog} selectedLog={selectedLog} />
+          <Log
+            changeLog={changeLog}
+            onClick={clearSelectedLog}
+            selectedLog={selectedLog}
+          />
         ) : null}
         <div
           data-popup="Înregistrare"
